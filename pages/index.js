@@ -80,25 +80,74 @@ const Home = ({ characters }) => {
           */}
         </Carousel.Item>
       </Carousel>
-      {/* <SimpleGrid columns={3} spacing={5}>
-        {characters.map((character) => {
-          return (
-            <Stack key={character.id}>
-              <Link href={`/characters/${character.id}`}>
-                <a>
-                  <Text fontSize="xs">{character.name}</Text>
-                </a>
-              </Link>
-              <Image
-                src={character.image}
-                alt={character.name}
-                width="200"
-                height="200"
-              />
-            </Stack>
-          )
-        })}
-      </SimpleGrid> */}
+      <Stack textAlign="center">
+        <Text fontSize="5xl" fontWeight="bold" mt="20px">
+          From Farm to Fork
+        </Text>
+      </Stack>
+      <SimpleGrid columns={[2, 2, 4, 4]} spacing={5} p="10px">
+        <Stack p="5px" alignItems="center">
+          <Image
+            src="/handpicked-ingredients.jpg"
+            alt="handpicked-ingredients"
+            width="100px"
+            height="100px"
+          />
+          <Text fontSize="s" fontWeight="bold" textAlign="center">
+            Ingredients chosen with care
+          </Text>
+          <Text fontSize="s" p="10px" textAlign="center">
+            Ingredients sourced locally and free of genetically engineered
+            organisms
+          </Text>
+        </Stack>
+        <Stack p="5px" alignItems="center">
+          <Image
+            src="/carbon-footprint.jpg"
+            alt="carbon-footprint"
+            width="100px"
+            height="100px"
+          />
+          <Text fontSize="s" fontWeight="bold" textAlign="center">
+            Lowest Carbon Footprint
+          </Text>
+          <Text fontSize="s" p="10px" textAlign="center">
+            Conventional environmentally friendly agriculture and
+            agro-processing methods to reduce emissions & pollutants.
+          </Text>
+        </Stack>
+        <Stack p="5px" alignItems="center">
+          <Image
+            src="/empowerment.jpg"
+            alt="empowerment"
+            width="100px"
+            height="100px"
+          />
+          <Text fontSize="s" fontWeight="bold" textAlign="center">
+            Farmer Empowerment
+          </Text>
+          <Text fontSize="s" p="10px" textAlign="center">
+            Support the livelihood and well-being of local farmers, as well as
+            training and employment opportunities for rural Indians,
+            particularly women.
+          </Text>
+        </Stack>
+        <Stack p="5px" alignItems="center">
+          <Image
+            src="/package.jpg"
+            alt="package"
+            width="100px"
+            height="100px"
+          />
+          <Text fontSize="s" fontWeight="bold" textAlign="center">
+            Lovingly Packed and Delivered
+          </Text>
+          <Text fontSize="s" p="10px" textAlign="center">
+            Genuine food goods that are hygienically packed, hand-labelled, and
+            carefully delivered to ensure the finest consumer experience.
+          </Text>
+        </Stack>
+      </SimpleGrid>
     </Stack>
   )
 }

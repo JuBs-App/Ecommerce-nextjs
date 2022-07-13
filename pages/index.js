@@ -81,7 +81,7 @@ const Home = ({ characters }) => {
         </Carousel.Item>
       </Carousel>
       <Stack textAlign="center">
-        <Text fontSize="5xl" fontWeight="bold" mt="20px">
+        <Text fontSize="5xl" fontWeight="bold" mt="50px !important">
           From Farm to Fork
         </Text>
       </Stack>
@@ -148,7 +148,7 @@ const Home = ({ characters }) => {
           </Text>
         </Stack>
       </SimpleGrid>
-      <SimpleGrid columns={[1, 1, 2, 2]} spacing={5} mt="30px !important">
+      <SimpleGrid columns={[1, 1, 2, 2]} spacing={5} mt="100px !important">
         <Image src="/flour.png" alt="flour" width="100%" height="650px" />
         <Stack>
           <Text fontSize="s" fontWeight="bold" textAlign="center">

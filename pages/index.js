@@ -10,6 +10,8 @@ import {
   Text,
 } from '@chakra-ui/react'
 import { Carousel } from 'react-bootstrap'
+import 'react-responsive-carousel/lib/styles/carousel.min.css' // requires a loader
+import { Carousel as Carousel02 } from 'react-responsive-carousel'
 
 const Home = ({ characters }) => {
   return (
@@ -261,6 +263,96 @@ const Home = ({ characters }) => {
           </Card>
         </Stack>
       </SimpleGrid>
+      <Stack width="80%" margin="auto !important">
+        <SimpleGrid columns={[1, 1, 3, 3]} spacing={5} mt="100px !important">
+          <Stack></Stack>
+          <Stack>
+            <Carousel02 autoPlay={true} autoFocus={true} infiniteLoop={true}>
+              <Stack>
+                <Image
+                  src="/item-pics/1ltr-coconut-front.jpg"
+                  alt="1ltr-coconut-front"
+                  width="100%"
+                  height="350px"
+                />
+              </Stack>
+              <Stack>
+                <Image
+                  src="/item-pics/1ltr-coconut-back.jpg"
+                  alt="1ltr-coconut-back"
+                  width="100%"
+                  height="350px"
+                />
+              </Stack>
+              <Stack>
+                <Image
+                  src="/item-pics/1ltr-groundnut-front.jpg"
+                  alt="1ltr-groundnut-front"
+                  width="100%"
+                  height="350px"
+                />
+              </Stack>
+              <Stack>
+                <Image
+                  src="/item-pics/1ltr-groundnut-back.jpg"
+                  alt="1ltr-groundnut-back"
+                  width="100%"
+                  height="350px"
+                />
+              </Stack>
+              <Stack>
+                <Image
+                  src="/item-pics/1ltr-safflower-front.jpg"
+                  alt="1ltr-safflower-front"
+                  width="100%"
+                  height="350px"
+                />
+              </Stack>
+              <Stack>
+                <Image
+                  src="/item-pics/1ltr-safflower-back.jpg"
+                  alt="1ltr-safflower-back"
+                  width="100%"
+                  height="350px"
+                />
+              </Stack>
+              <Stack>
+                <Image
+                  src="/item-pics/500ml-coconut-front.jpg"
+                  alt="500ml-coconut-front"
+                  width="100%"
+                  height="350px"
+                />
+              </Stack>
+              <Stack>
+                <Image
+                  src="/item-pics/500ml-coconut-back.jpg"
+                  alt="500ml-coconut-back"
+                  width="100%"
+                  height="350px"
+                />
+              </Stack>
+              <Stack>
+                <Image
+                  src="/item-pics/500ml-safflower-front.jpg"
+                  alt="500ml-safflower-front"
+                  width="100%"
+                  height="350px"
+                />
+              </Stack>
+              <Stack>
+                <Image
+                  src="/item-pics/500ml-safflower-back.jpg"
+                  alt="500ml-safflower-back"
+                  width="100%"
+                  height="350px"
+                />
+              </Stack>
+            </Carousel02>
+          </Stack>
+          <Stack></Stack>
+        </SimpleGrid>
+      </Stack>
     </Stack>
   )
 }

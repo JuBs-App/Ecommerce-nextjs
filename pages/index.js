@@ -87,7 +87,7 @@ const Home = ({ characters }) => {
       </Stack>
       <SimpleGrid columns={[1, 2, 4, 4]} spacing={5} p="10px">
         <Stack p="5px" alignItems="center">
-          <Card>
+          <Card height="100%" backgroundColor="#cc8d89">
             <Image
               src="/handpicked-ingredients.jpg"
               alt="handpicked-ingredients"
@@ -105,7 +105,7 @@ const Home = ({ characters }) => {
         </Stack>
 
         <Stack p="5px" alignItems="center">
-          <Card>
+          <Card height="100%" backgroundColor="#cc8d89">
             <Image
               src="/carbon-footprint.jpg"
               alt="carbon-footprint"
@@ -122,7 +122,7 @@ const Home = ({ characters }) => {
           </Card>
         </Stack>
         <Stack p="5px" alignItems="center">
-          <Card>
+          <Card height="100%" backgroundColor="#cc8d89">
             <Image
               src="/empowerment.jpg"
               alt="empowerment"
@@ -140,7 +140,7 @@ const Home = ({ characters }) => {
           </Card>
         </Stack>
         <Stack p="5px" alignItems="center">
-          <Card>
+          <Card height="100%" backgroundColor="#cc8d89">
             <Image
               src="/package.jpg"
               alt="package"
@@ -157,10 +157,11 @@ const Home = ({ characters }) => {
           </Card>
         </Stack>
       </SimpleGrid>
-      <Card>
-        <SimpleGrid columns={[1, 1, 2, 2]} spacing={5} mt="100px !important">
-          <Image src="/flour.png" alt="flour" width="100%" height="650px" />
-          <Stack>
+
+      <SimpleGrid columns={[1, 1, 2, 2]} spacing={5} mt="100px !important">
+        <Image src="/flour.png" alt="flour" width="100%" height="100%" />
+        <Stack>
+          <Card backgroundColor="#cc8d89">
             <Text fontSize="s" fontWeight="bold" textAlign="center">
               WHY GOA NATURALS?
             </Text>
@@ -257,9 +258,9 @@ const Home = ({ characters }) => {
                 </Text>
               </Stack>
             </SimpleGrid>
-          </Stack>
-        </SimpleGrid>
-      </Card>
+          </Card>
+        </Stack>
+      </SimpleGrid>
     </Stack>
   )
 }
@@ -271,7 +272,6 @@ const Card = ({ children, ...props }) => {
       borderRadius="md"
       bg="white"
       boxShadow="md"
-      backgroundColor="#cc8d89"
       borderColor="gray.200"
       borderWidth={1}
       alignItems="center"

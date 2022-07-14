@@ -350,7 +350,7 @@ const Home = ({ characters }) => {
                   src="/item-pics/1ltr-coconut-front.jpg"
                   alt="1ltr-coconut-front"
                   width="100%"
-                  height="350px"
+                  height={['500px', '500px', '350px', '350px']}
                   borderRadius="10px"
                   borderWidth="thin"
                   boxShadow="lg"
@@ -362,7 +362,7 @@ const Home = ({ characters }) => {
                   src="/item-pics/1ltr-coconut-back.jpg"
                   alt="1ltr-coconut-back"
                   width="100%"
-                  height="350px"
+                  height={['500px', '500px', '350px', '350px']}
                   borderRadius="10px"
                   boxShadow="lg"
                   boxShadowColor="#6b7d70"
@@ -373,7 +373,7 @@ const Home = ({ characters }) => {
                   src="/item-pics/1ltr-groundnut-front.jpg"
                   alt="1ltr-groundnut-front"
                   width="100%"
-                  height="350px"
+                  height={['500px', '500px', '350px', '350px']}
                   borderRadius="10px"
                   boxShadow="lg"
                   boxShadowColor="#6b7d70"
@@ -384,7 +384,7 @@ const Home = ({ characters }) => {
                   src="/item-pics/1ltr-groundnut-back.jpg"
                   alt="1ltr-groundnut-back"
                   width="100%"
-                  height="350px"
+                  height={['500px', '500px', '350px', '350px']}
                   borderRadius="10px"
                   boxShadow="lg"
                   boxShadowColor="#6b7d70"
@@ -395,7 +395,7 @@ const Home = ({ characters }) => {
                   src="/item-pics/1ltr-safflower-front.jpg"
                   alt="1ltr-safflower-front"
                   width="100%"
-                  height="350px"
+                  height={['500px', '500px', '350px', '350px']}
                   borderRadius="10px"
                   boxShadow="lg"
                   boxShadowColor="#6b7d70"
@@ -406,7 +406,7 @@ const Home = ({ characters }) => {
                   src="/item-pics/1ltr-safflower-back.jpg"
                   alt="1ltr-safflower-back"
                   width="100%"
-                  height="350px"
+                  height={['500px', '500px', '350px', '350px']}
                   borderRadius="10px"
                   boxShadow="lg"
                   boxShadowColor="#6b7d70"
@@ -417,7 +417,7 @@ const Home = ({ characters }) => {
                   src="/item-pics/500ml-coconut-front.jpg"
                   alt="500ml-coconut-front"
                   width="100%"
-                  height="350px"
+                  height={['500px', '500px', '350px', '350px']}
                   borderRadius="10px"
                   boxShadow="lg"
                   boxShadowColor="#6b7d70"
@@ -428,7 +428,7 @@ const Home = ({ characters }) => {
                   src="/item-pics/500ml-coconut-back.jpg"
                   alt="500ml-coconut-back"
                   width="100%"
-                  height="350px"
+                  height={['500px', '500px', '350px', '350px']}
                   borderRadius="10px"
                   boxShadow="lg"
                   boxShadowColor="#6b7d70"
@@ -439,7 +439,7 @@ const Home = ({ characters }) => {
                   src="/item-pics/500ml-safflower-front.jpg"
                   alt="500ml-safflower-front"
                   width="100%"
-                  height="350px"
+                  height={['500px', '500px', '350px', '350px']}
                   borderRadius="10px"
                   boxShadow="lg"
                   boxShadowColor="#6b7d70"
@@ -450,7 +450,7 @@ const Home = ({ characters }) => {
                   src="/item-pics/500ml-safflower-back.jpg"
                   alt="500ml-safflower-back"
                   width="100%"
-                  height="350px"
+                  height={['500px', '500px', '350px', '350px']}
                   borderRadius="10px"
                   boxShadow="lg"
                   boxShadowColor="#6b7d70"

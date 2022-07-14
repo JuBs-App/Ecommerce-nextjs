@@ -458,7 +458,69 @@ const Home = ({ characters }) => {
               </Stack>
             </Carousel02>
           </Stack>
-          <Stack></Stack>
+          <Stack flexDirection="column">
+            <Stack>
+              <Text
+                fontSize="s"
+                fontWeight="bold"
+                textAlign="left"
+                mt="20px"
+                width="120px"
+              >
+                Completely RAW
+              </Text>
+              <Text
+                fontSize="xs"
+                color="#808285"
+                textAlign="left"
+                width="210px"
+              >
+                Fruits, nuts, and seeds in their purest form! That is the only
+                ingredient in our oils, and it is incredibly pure and raw.
+              </Text>
+            </Stack>
+            <Stack>
+              <Text
+                fontSize="s"
+                fontWeight="bold"
+                textAlign="left"
+                mt="20px"
+                width="150px"
+              >
+                Plenty with antioxidants
+              </Text>
+              <Text
+                fontSize="xs"
+                color="#808285"
+                textAlign="left"
+                width="210px"
+              >
+                Vitamin C, Vitamin E, and beta-carotene, which are beneficial
+                for skincare and anti-aging, may all be obtained naturally from
+                organic antioxidants.
+              </Text>
+            </Stack>
+            <Stack>
+              <Text
+                fontSize="s"
+                fontWeight="bold"
+                textAlign="left"
+                mt="20px"
+                width="150px"
+              >
+                Trans-Fat Free
+              </Text>
+              <Text
+                fontSize="xs"
+                color="#808285"
+                textAlign="left"
+                width="210px"
+              >
+                Trans-fat is not present in cold-pressed oil because there is
+                neither heating nor chemical processing.
+              </Text>
+            </Stack>
+          </Stack>
         </SimpleGrid>
       </Stack>
     </Stack>

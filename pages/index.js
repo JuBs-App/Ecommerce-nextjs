@@ -269,43 +269,81 @@ const Home = ({ characters }) => {
           fontWeight="bold"
           textAlign="center"
           mt="100px !important"
-          marginBottom="30px"
         >
           Advantages of Cold Pressed Oil
         </Text>
         <SimpleGrid columns={[1, 1, 3, 3]} spacing={5}>
           <Stack flexDirection="column">
             <Stack>
-              <Text fontSize="s" fontWeight="bold" textAlign="right" mt="20px">
+              <Text
+                fontSize="s"
+                fontWeight="bold"
+                textAlign="right"
+                mt="20px"
+                width="120px"
+                alignSelf="end"
+              >
                 No additives, no refinement
               </Text>
-              <Text fontSize="s" textAlign="right">
+              <Text
+                fontSize="xs"
+                color="#808285"
+                textAlign="right"
+                width="210px"
+                alignSelf="end"
+              >
                 Traditional wood presses are used to extract oils, which include
                 crushing the oil seeds at low temperatures without the use of
                 chemicals.
               </Text>
             </Stack>
             <Stack>
-              <Text fontSize="s" fontWeight="bold" textAlign="right" mt="20px">
+              <Text
+                fontSize="s"
+                fontWeight="bold"
+                textAlign="right"
+                mt="20px"
+                width="150px"
+                alignSelf="end"
+              >
                 Free of Cholesterol
               </Text>
-              <Text fontSize="s" textAlign="right">
+              <Text
+                fontSize="xs"
+                color="#808285"
+                textAlign="right"
+                width="210px"
+                alignSelf="end"
+              >
                 Cholesterol-free, which offers a better alternative to refined
                 oil and relief from cardiovascular issues.
               </Text>
             </Stack>
             <Stack>
-              <Text fontSize="s" fontWeight="bold" textAlign="right" mt="20px">
+              <Text
+                fontSize="s"
+                fontWeight="bold"
+                textAlign="right"
+                mt="20px"
+                width="150px"
+                alignSelf="end"
+              >
                 Rich in Nutrients
               </Text>
-              <Text fontSize="s" textAlign="right">
+              <Text
+                fontSize="xs"
+                color="#808285"
+                textAlign="right"
+                width="210px"
+                alignSelf="end"
+              >
                 The cold pressing procedure preserves the flavour, aroma, and
                 nutritional value of the seeds/nuts, making these oils
                 beneficial to your health.
               </Text>
             </Stack>
           </Stack>
-          <Stack boxShadow="lg" boxShadowColor="#6b7d70" mt="50px">
+          <Stack boxShadow="lg" boxShadowColor="#6b7d70" mt="40px">
             <Carousel02 autoPlay={true} autoFocus={true} infiniteLoop={true}>
               <Stack>
                 <Image

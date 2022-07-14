@@ -344,7 +344,12 @@ const Home = ({ characters }) => {
             </Stack>
           </Stack>
           <Stack boxShadow="lg" boxShadowColor="#6b7d70" mt="40px">
-            <Carousel02 autoPlay={true} autoFocus={true} infiniteLoop={true}>
+            <Carousel02
+              autoPlay={true}
+              autoFocus={true}
+              infiniteLoop={true}
+              showStatus={false}
+            >
               <Stack>
                 <Image
                   src="/item-pics/1ltr-coconut-front.jpg"

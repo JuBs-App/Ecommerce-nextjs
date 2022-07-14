@@ -271,6 +271,7 @@ const Card = ({ children, ...props }) => {
       borderRadius="md"
       bg="white"
       boxShadow="md"
+      backgroundColor="#cc8d89"
       borderColor="gray.200"
       borderWidth={1}
       alignItems="center"

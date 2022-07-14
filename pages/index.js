@@ -266,7 +266,7 @@ const Home = ({ characters }) => {
       <Stack width="80%" margin="auto !important">
         <SimpleGrid columns={[1, 1, 3, 3]} spacing={5} mt="100px !important">
           <Stack></Stack>
-          <Stack>
+          <Stack boxShadow="lg" boxShadowColor="#6b7d70">
             <Carousel02 autoPlay={true} autoFocus={true} infiniteLoop={true}>
               <Stack>
                 <Image
@@ -275,6 +275,9 @@ const Home = ({ characters }) => {
                   width="100%"
                   height="350px"
                   borderRadius="10px"
+                  borderWidth="thin"
+                  boxShadow="lg"
+                  boxShadowColor="#6b7d70"
                 />
               </Stack>
               <Stack>
@@ -284,6 +287,8 @@ const Home = ({ characters }) => {
                   width="100%"
                   height="350px"
                   borderRadius="10px"
+                  boxShadow="lg"
+                  boxShadowColor="#6b7d70"
                 />
               </Stack>
               <Stack>
@@ -293,6 +298,8 @@ const Home = ({ characters }) => {
                   width="100%"
                   height="350px"
                   borderRadius="10px"
+                  boxShadow="lg"
+                  boxShadowColor="#6b7d70"
                 />
               </Stack>
               <Stack>
@@ -302,6 +309,8 @@ const Home = ({ characters }) => {
                   width="100%"
                   height="350px"
                   borderRadius="10px"
+                  boxShadow="lg"
+                  boxShadowColor="#6b7d70"
                 />
               </Stack>
               <Stack>
@@ -311,6 +320,8 @@ const Home = ({ characters }) => {
                   width="100%"
                   height="350px"
                   borderRadius="10px"
+                  boxShadow="lg"
+                  boxShadowColor="#6b7d70"
                 />
               </Stack>
               <Stack>
@@ -320,6 +331,8 @@ const Home = ({ characters }) => {
                   width="100%"
                   height="350px"
                   borderRadius="10px"
+                  boxShadow="lg"
+                  boxShadowColor="#6b7d70"
                 />
               </Stack>
               <Stack>
@@ -329,6 +342,8 @@ const Home = ({ characters }) => {
                   width="100%"
                   height="350px"
                   borderRadius="10px"
+                  boxShadow="lg"
+                  boxShadowColor="#6b7d70"
                 />
               </Stack>
               <Stack>
@@ -338,6 +353,8 @@ const Home = ({ characters }) => {
                   width="100%"
                   height="350px"
                   borderRadius="10px"
+                  boxShadow="lg"
+                  boxShadowColor="#6b7d70"
                 />
               </Stack>
               <Stack>
@@ -347,6 +364,8 @@ const Home = ({ characters }) => {
                   width="100%"
                   height="350px"
                   borderRadius="10px"
+                  boxShadow="lg"
+                  boxShadowColor="#6b7d70"
                 />
               </Stack>
               <Stack>
@@ -356,6 +375,8 @@ const Home = ({ characters }) => {
                   width="100%"
                   height="350px"
                   borderRadius="10px"
+                  boxShadow="lg"
+                  boxShadowColor="#6b7d70"
                 />
               </Stack>
             </Carousel02>

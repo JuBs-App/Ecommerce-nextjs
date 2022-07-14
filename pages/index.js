@@ -85,7 +85,7 @@ const Home = ({ characters }) => {
           From Farm to Fork
         </Text>
       </Stack>
-      <SimpleGrid columns={[2, 2, 4, 4]} spacing={5} p="10px">
+      <SimpleGrid columns={[1, 2, 4, 4]} spacing={5} p="10px">
         <Stack p="5px" alignItems="center">
           <Image
             src="/handpicked-ingredients.jpg"
@@ -154,7 +154,7 @@ const Home = ({ characters }) => {
           <Text fontSize="s" fontWeight="bold" textAlign="center">
             WHY GOA NATURALS?
           </Text>
-          <SimpleGrid columns={[2, 2, 3, 3]} spacing={5}>
+          <SimpleGrid columns={[1, 2, 3, 3]} spacing={5}>
             <Stack p="5px" alignItems="center">
               <Image
                 src="/onlybest-90.png"

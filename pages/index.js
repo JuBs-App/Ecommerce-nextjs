@@ -264,9 +264,48 @@ const Home = ({ characters }) => {
         </Stack>
       </SimpleGrid>
       <Stack width="80%" margin="auto !important">
-        <SimpleGrid columns={[1, 1, 3, 3]} spacing={5} mt="100px !important">
-          <Stack></Stack>
-          <Stack boxShadow="lg" boxShadowColor="#6b7d70">
+        <Text
+          fontSize="large"
+          fontWeight="bold"
+          textAlign="center"
+          mt="100px !important"
+          marginBottom="30px"
+        >
+          Advantages of Cold Pressed Oil
+        </Text>
+        <SimpleGrid columns={[1, 1, 3, 3]} spacing={5}>
+          <Stack flexDirection="column">
+            <Stack>
+              <Text fontSize="s" fontWeight="bold" textAlign="right" mt="20px">
+                No additives, no refinement
+              </Text>
+              <Text fontSize="s" textAlign="right">
+                Traditional wood presses are used to extract oils, which include
+                crushing the oil seeds at low temperatures without the use of
+                chemicals.
+              </Text>
+            </Stack>
+            <Stack>
+              <Text fontSize="s" fontWeight="bold" textAlign="right" mt="20px">
+                Free of Cholesterol
+              </Text>
+              <Text fontSize="s" textAlign="right">
+                Cholesterol-free, which offers a better alternative to refined
+                oil and relief from cardiovascular issues.
+              </Text>
+            </Stack>
+            <Stack>
+              <Text fontSize="s" fontWeight="bold" textAlign="right" mt="20px">
+                Rich in Nutrients
+              </Text>
+              <Text fontSize="s" textAlign="right">
+                The cold pressing procedure preserves the flavour, aroma, and
+                nutritional value of the seeds/nuts, making these oils
+                beneficial to your health.
+              </Text>
+            </Stack>
+          </Stack>
+          <Stack boxShadow="lg" boxShadowColor="#6b7d70" mt="50px">
             <Carousel02 autoPlay={true} autoFocus={true} infiniteLoop={true}>
               <Stack>
                 <Image

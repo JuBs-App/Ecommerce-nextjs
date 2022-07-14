@@ -274,6 +274,7 @@ const Home = ({ characters }) => {
                   alt="1ltr-coconut-front"
                   width="100%"
                   height="350px"
+                  borderRadius="10px"
                 />
               </Stack>
               <Stack>
@@ -282,6 +283,7 @@ const Home = ({ characters }) => {
                   alt="1ltr-coconut-back"
                   width="100%"
                   height="350px"
+                  borderRadius="10px"
                 />
               </Stack>
               <Stack>
@@ -290,6 +292,7 @@ const Home = ({ characters }) => {
                   alt="1ltr-groundnut-front"
                   width="100%"
                   height="350px"
+                  borderRadius="10px"
                 />
               </Stack>
               <Stack>
@@ -298,6 +301,7 @@ const Home = ({ characters }) => {
                   alt="1ltr-groundnut-back"
                   width="100%"
                   height="350px"
+                  borderRadius="10px"
                 />
               </Stack>
               <Stack>
@@ -306,6 +310,7 @@ const Home = ({ characters }) => {
                   alt="1ltr-safflower-front"
                   width="100%"
                   height="350px"
+                  borderRadius="10px"
                 />
               </Stack>
               <Stack>
@@ -314,6 +319,7 @@ const Home = ({ characters }) => {
                   alt="1ltr-safflower-back"
                   width="100%"
                   height="350px"
+                  borderRadius="10px"
                 />
               </Stack>
               <Stack>
@@ -322,6 +328,7 @@ const Home = ({ characters }) => {
                   alt="500ml-coconut-front"
                   width="100%"
                   height="350px"
+                  borderRadius="10px"
                 />
               </Stack>
               <Stack>
@@ -330,6 +337,7 @@ const Home = ({ characters }) => {
                   alt="500ml-coconut-back"
                   width="100%"
                   height="350px"
+                  borderRadius="10px"
                 />
               </Stack>
               <Stack>
@@ -338,6 +346,7 @@ const Home = ({ characters }) => {
                   alt="500ml-safflower-front"
                   width="100%"
                   height="350px"
+                  borderRadius="10px"
                 />
               </Stack>
               <Stack>
@@ -346,6 +355,7 @@ const Home = ({ characters }) => {
                   alt="500ml-safflower-back"
                   width="100%"
                   height="350px"
+                  borderRadius="10px"
                 />
               </Stack>
             </Carousel02>

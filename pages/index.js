@@ -87,65 +87,74 @@ const Home = ({ characters }) => {
       </Stack>
       <SimpleGrid columns={[1, 2, 4, 4]} spacing={5} p="10px">
         <Stack p="5px" alignItems="center">
-          <Image
-            src="/handpicked-ingredients.jpg"
-            alt="handpicked-ingredients"
-            width="100px"
-            height="100px"
-          />
-          <Text fontSize="s" fontWeight="bold" textAlign="center">
-            Ingredients chosen with care
-          </Text>
-          <Text fontSize="s" p="10px" textAlign="center">
-            Ingredients sourced locally and free of genetically engineered
-            organisms
-          </Text>
+          <Card>
+            <Image
+              src="/handpicked-ingredients.jpg"
+              alt="handpicked-ingredients"
+              width="100px"
+              height="100px"
+            />
+            <Text fontSize="s" fontWeight="bold" textAlign="center">
+              Ingredients chosen with care
+            </Text>
+            <Text fontSize="s" p="10px" textAlign="center">
+              Ingredients sourced locally and free of genetically engineered
+              organisms
+            </Text>
+          </Card>
+        </Stack>
+
+        <Stack p="5px" alignItems="center">
+          <Card>
+            <Image
+              src="/carbon-footprint.jpg"
+              alt="carbon-footprint"
+              width="100px"
+              height="100px"
+            />
+            <Text fontSize="s" fontWeight="bold" textAlign="center">
+              Lowest Carbon Footprint
+            </Text>
+            <Text fontSize="s" p="10px" textAlign="center">
+              Conventional environmentally friendly agriculture and
+              agro-processing methods to reduce emissions & pollutants.
+            </Text>
+          </Card>
         </Stack>
         <Stack p="5px" alignItems="center">
-          <Image
-            src="/carbon-footprint.jpg"
-            alt="carbon-footprint"
-            width="100px"
-            height="100px"
-          />
-          <Text fontSize="s" fontWeight="bold" textAlign="center">
-            Lowest Carbon Footprint
-          </Text>
-          <Text fontSize="s" p="10px" textAlign="center">
-            Conventional environmentally friendly agriculture and
-            agro-processing methods to reduce emissions & pollutants.
-          </Text>
+          <Card>
+            <Image
+              src="/empowerment.jpg"
+              alt="empowerment"
+              width="100px"
+              height="100px"
+            />
+            <Text fontSize="s" fontWeight="bold" textAlign="center">
+              Farmer Empowerment
+            </Text>
+            <Text fontSize="s" p="10px" textAlign="center">
+              Support the livelihood and well-being of local farmers, as well as
+              training and employment opportunities for rural Indians,
+              particularly women.
+            </Text>
+          </Card>
         </Stack>
         <Stack p="5px" alignItems="center">
-          <Image
-            src="/empowerment.jpg"
-            alt="empowerment"
-            width="100px"
-            height="100px"
-          />
-          <Text fontSize="s" fontWeight="bold" textAlign="center">
-            Farmer Empowerment
-          </Text>
-          <Text fontSize="s" p="10px" textAlign="center">
-            Support the livelihood and well-being of local farmers, as well as
-            training and employment opportunities for rural Indians,
-            particularly women.
-          </Text>
-        </Stack>
-        <Stack p="5px" alignItems="center">
-          <Image
-            src="/package.jpg"
-            alt="package"
-            width="100px"
-            height="100px"
-          />
-          <Text fontSize="s" fontWeight="bold" textAlign="center">
-            Lovingly Packed and Delivered
-          </Text>
-          <Text fontSize="s" p="10px" textAlign="center">
-            Genuine food goods that are hygienically packed, hand-labelled, and
-            carefully delivered to ensure the finest consumer experience.
-          </Text>
+          <Card>
+            <Image
+              src="/package.jpg"
+              alt="package"
+              width="100px"
+              height="100px"
+            />
+            <Text fontSize="s" fontWeight="bold" textAlign="center">
+              Lovingly Packed and Delivered
+            </Text>
+            <Text fontSize="s" p="10px" textAlign="center">
+              Genuine food goods that are hygienically packed, hand-labelled,
+              and carefully delivered to ensure the finest consumer experience.
+            </Text>
+          </Card>
         </Stack>
       </SimpleGrid>
       <SimpleGrid columns={[1, 1, 2, 2]} spacing={5} mt="100px !important">
@@ -249,6 +258,23 @@ const Home = ({ characters }) => {
           </SimpleGrid>
         </Stack>
       </SimpleGrid>
+    </Stack>
+  )
+}
+
+const Card = ({ children, ...props }) => {
+  return (
+    <Stack
+      p={8}
+      borderRadius="md"
+      bg="white"
+      boxShadow="md"
+      borderColor="gray.200"
+      borderWidth={1}
+      alignItems="center"
+      {...props}
+    >
+      {children}
     </Stack>
   )
 }

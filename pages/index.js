@@ -28,10 +28,30 @@ const Home = ({ characters }) => {
           rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap"
+          rel="stylesheet"
+        />
       </Head>
 
       <hr />
       <Carousel fade>
+        <Carousel.Item interval={1000}>
+          <Image
+            className="d-block w-100"
+            src="/Goa-natural/Goa-natural05.png"
+            alt="First slide"
+            height="450px"
+          />
+          {/* <Carousel.Caption>
+            <Heading as="h1" size="4xl" noOfLines={1}>
+              cold pressed coconut oil
+            </Heading>
+            <a href="#services">
+            <Button className="book-btn">Book Now</Button>
+            </a>
+          </Carousel.Caption> */}
+        </Carousel.Item>
         <Carousel.Item interval={1000}>
           <Image
             className="d-block w-100"
@@ -83,7 +103,12 @@ const Home = ({ characters }) => {
         </Carousel.Item>
       </Carousel>
       <Stack textAlign="center">
-        <Text fontSize="5xl" fontWeight="bold" mt="50px !important">
+        <Text
+          fontSize="5xl"
+          fontWeight="bold"
+          mt="50px !important"
+          fontFamily="Mochiy Pop P One"
+        >
           From Farm to Fork
         </Text>
       </Stack>
@@ -96,7 +121,12 @@ const Home = ({ characters }) => {
               width="100px"
               height="100px"
             />
-            <Text fontSize="s" fontWeight="bold" textAlign="center">
+            <Text
+              fontSize="s"
+              fontWeight="bold"
+              textAlign="center"
+              fontFamily="Mochiy Pop P One"
+            >
               Ingredients chosen with care
             </Text>
             <Text fontSize="s" p="10px" textAlign="center">
@@ -114,7 +144,12 @@ const Home = ({ characters }) => {
               width="100px"
               height="100px"
             />
-            <Text fontSize="s" fontWeight="bold" textAlign="center">
+            <Text
+              fontSize="s"
+              fontWeight="bold"
+              textAlign="center"
+              fontFamily="Mochiy Pop P One"
+            >
               Lowest Carbon Footprint
             </Text>
             <Text fontSize="s" p="10px" textAlign="center">
@@ -131,7 +166,12 @@ const Home = ({ characters }) => {
               width="100px"
               height="100px"
             />
-            <Text fontSize="s" fontWeight="bold" textAlign="center">
+            <Text
+              fontSize="s"
+              fontWeight="bold"
+              textAlign="center"
+              fontFamily="Mochiy Pop P One"
+            >
               Farmer Empowerment
             </Text>
             <Text fontSize="s" p="10px" textAlign="center">
@@ -149,7 +189,12 @@ const Home = ({ characters }) => {
               width="100px"
               height="100px"
             />
-            <Text fontSize="s" fontWeight="bold" textAlign="center">
+            <Text
+              fontSize="s"
+              fontWeight="bold"
+              textAlign="center"
+              fontFamily="Mochiy Pop P One"
+            >
               Lovingly Packed and Delivered
             </Text>
             <Text fontSize="s" p="10px" textAlign="center">
@@ -160,11 +205,27 @@ const Home = ({ characters }) => {
         </Stack>
       </SimpleGrid>
 
-      <SimpleGrid columns={[1, 1, 2, 2]} spacing={5} mt="100px !important">
-        <Image src="/flour.png" alt="flour" width="100%" height="100%" />
+      <SimpleGrid
+        columns={[1, 1, 2, 2]}
+        spacing={5}
+        mt="100px !important"
+        backgroundColor="#cc8d89"
+      >
+        <Image
+          src="/Goa-natural/Goa-natural03.png"
+          alt="Goa-natural"
+          width="100%"
+          height="700px"
+          alignSelf="center"
+        />
         <Stack>
-          <Card backgroundColor="#cc8d89">
-            <Text fontSize="s" fontWeight="bold" textAlign="center">
+          <Card backgroundColor="#cc8d89" borderLess={true}>
+            <Text
+              fontSize="s"
+              fontWeight="bold"
+              textAlign="center"
+              fontFamily="Mochiy Pop P One"
+            >
               WHY GOA NATURALS?
             </Text>
             <SimpleGrid columns={[1, 2, 3, 3]} spacing={5}>
@@ -175,7 +236,12 @@ const Home = ({ characters }) => {
                   width="100px"
                   height="100px"
                 />
-                <Text fontSize="s" fontWeight="bold" textAlign="center">
+                <Text
+                  fontSize="s"
+                  fontWeight="bold"
+                  textAlign="center"
+                  fontFamily="Mochiy Pop P One"
+                >
                   Only Best Ingredients
                 </Text>
                 <Text fontSize="s" p="10px" textAlign="center">
@@ -190,7 +256,12 @@ const Home = ({ characters }) => {
                   width="100px"
                   height="100px"
                 />
-                <Text fontSize="s" fontWeight="bold" textAlign="center">
+                <Text
+                  fontSize="s"
+                  fontWeight="bold"
+                  textAlign="center"
+                  fontFamily="Mochiy Pop P One"
+                >
                   Traditions Renewed
                 </Text>
                 <Text fontSize="s" p="10px" textAlign="center">
@@ -206,7 +277,12 @@ const Home = ({ characters }) => {
                   width="100px"
                   height="100px"
                 />
-                <Text fontSize="s" fontWeight="bold" textAlign="center">
+                <Text
+                  fontSize="s"
+                  fontWeight="bold"
+                  textAlign="center"
+                  fontFamily="Mochiy Pop P One"
+                >
                   Superior Nutrition
                 </Text>
                 <Text fontSize="s" p="10px" textAlign="center">
@@ -221,7 +297,12 @@ const Home = ({ characters }) => {
                   width="100px"
                   height="100px"
                 />
-                <Text fontSize="s" fontWeight="bold" textAlign="center">
+                <Text
+                  fontSize="s"
+                  fontWeight="bold"
+                  textAlign="center"
+                  fontFamily="Mochiy Pop P One"
+                >
                   Residue-Free
                 </Text>
                 <Text fontSize="s" p="10px" textAlign="center">
@@ -236,7 +317,12 @@ const Home = ({ characters }) => {
                   width="100px"
                   height="100px"
                 />
-                <Text fontSize="s" fontWeight="bold" textAlign="center">
+                <Text
+                  fontSize="s"
+                  fontWeight="bold"
+                  textAlign="center"
+                  fontFamily="Mochiy Pop P One"
+                >
                   Sustainability
                 </Text>
                 <Text fontSize="s" p="10px" textAlign="center">
@@ -251,7 +337,12 @@ const Home = ({ characters }) => {
                   width="100px"
                   height="100px"
                 />
-                <Text fontSize="s" fontWeight="bold" textAlign="center">
+                <Text
+                  fontSize="s"
+                  fontWeight="bold"
+                  textAlign="center"
+                  fontFamily="Mochiy Pop P One"
+                >
                   The Best Only
                 </Text>
                 <Text fontSize="s" p="10px" textAlign="center">
@@ -269,6 +360,7 @@ const Home = ({ characters }) => {
           fontWeight="bold"
           textAlign="center"
           mt="100px !important"
+          fontFamily="Mochiy Pop P One"
         >
           Advantages of Cold Pressed Oil
         </Text>
@@ -527,15 +619,15 @@ const Home = ({ characters }) => {
   )
 }
 
-const Card = ({ children, ...props }) => {
+const Card = ({ children, borderLess = false, ...props }) => {
   return (
     <Stack
       p={8}
       borderRadius="md"
       bg="white"
-      boxShadow="md"
+      boxShadow={borderLess ? 'none' : 'md'}
       borderColor="gray.200"
-      borderWidth={1}
+      borderWidth={borderLess ? 0 : 1}
       alignItems="center"
       {...props}
     >

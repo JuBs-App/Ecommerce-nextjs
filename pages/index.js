@@ -358,7 +358,6 @@ const Home = ({ characters }) => {
                 mt="20px"
                 width="120px"
                 alignSelf="end"
-                fontFamily="Mochiy Pop P One"
               >
                 No additives, no refinement
               </Text>

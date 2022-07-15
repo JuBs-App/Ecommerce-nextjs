@@ -142,8 +142,11 @@ function Layout({ children }) {
         ) : null}
       </chakra.header>
       {children}
+      <Footer />
     </Stack>
   )
 }
+
+const Footer = () => {}
 
 export default Layout

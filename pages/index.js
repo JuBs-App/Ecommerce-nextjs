@@ -28,6 +28,10 @@ const Home = ({ characters }) => {
           rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap"
+          rel="stylesheet"
+        />
       </Head>
 
       <hr />
@@ -83,7 +87,12 @@ const Home = ({ characters }) => {
         </Carousel.Item>
       </Carousel>
       <Stack textAlign="center">
-        <Text fontSize="5xl" fontWeight="bold" mt="50px !important">
+        <Text
+          fontSize="5xl"
+          fontWeight="bold"
+          mt="50px !important"
+          fontFamily="Mochiy Pop P One"
+        >
           From Farm to Fork
         </Text>
       </Stack>
@@ -96,7 +105,12 @@ const Home = ({ characters }) => {
               width="100px"
               height="100px"
             />
-            <Text fontSize="s" fontWeight="bold" textAlign="center">
+            <Text
+              fontSize="s"
+              fontWeight="bold"
+              textAlign="center"
+              fontFamily="Mochiy Pop P One"
+            >
               Ingredients chosen with care
             </Text>
             <Text fontSize="s" p="10px" textAlign="center">
@@ -114,7 +128,12 @@ const Home = ({ characters }) => {
               width="100px"
               height="100px"
             />
-            <Text fontSize="s" fontWeight="bold" textAlign="center">
+            <Text
+              fontSize="s"
+              fontWeight="bold"
+              textAlign="center"
+              fontFamily="Mochiy Pop P One"
+            >
               Lowest Carbon Footprint
             </Text>
             <Text fontSize="s" p="10px" textAlign="center">
@@ -131,7 +150,12 @@ const Home = ({ characters }) => {
               width="100px"
               height="100px"
             />
-            <Text fontSize="s" fontWeight="bold" textAlign="center">
+            <Text
+              fontSize="s"
+              fontWeight="bold"
+              textAlign="center"
+              fontFamily="Mochiy Pop P One"
+            >
               Farmer Empowerment
             </Text>
             <Text fontSize="s" p="10px" textAlign="center">
@@ -149,7 +173,12 @@ const Home = ({ characters }) => {
               width="100px"
               height="100px"
             />
-            <Text fontSize="s" fontWeight="bold" textAlign="center">
+            <Text
+              fontSize="s"
+              fontWeight="bold"
+              textAlign="center"
+              fontFamily="Mochiy Pop P One"
+            >
               Lovingly Packed and Delivered
             </Text>
             <Text fontSize="s" p="10px" textAlign="center">
@@ -160,11 +189,27 @@ const Home = ({ characters }) => {
         </Stack>
       </SimpleGrid>
 
-      <SimpleGrid columns={[1, 1, 2, 2]} spacing={5} mt="100px !important">
-        <Image src="/flour.png" alt="flour" width="100%" height="100%" />
+      <SimpleGrid
+        columns={[1, 1, 2, 2]}
+        spacing={5}
+        mt="100px !important"
+        backgroundColor="antiquewhite"
+      >
+        <Image
+          src="/flour.png"
+          alt="flour"
+          width="100%"
+          height="400px"
+          alignSelf="center"
+        />
         <Stack>
           <Card backgroundColor="#cc8d89">
-            <Text fontSize="s" fontWeight="bold" textAlign="center">
+            <Text
+              fontSize="s"
+              fontWeight="bold"
+              textAlign="center"
+              fontFamily="Mochiy Pop P One"
+            >
               WHY GOA NATURALS?
             </Text>
             <SimpleGrid columns={[1, 2, 3, 3]} spacing={5}>
@@ -175,7 +220,12 @@ const Home = ({ characters }) => {
                   width="100px"
                   height="100px"
                 />
-                <Text fontSize="s" fontWeight="bold" textAlign="center">
+                <Text
+                  fontSize="s"
+                  fontWeight="bold"
+                  textAlign="center"
+                  fontFamily="Mochiy Pop P One"
+                >
                   Only Best Ingredients
                 </Text>
                 <Text fontSize="s" p="10px" textAlign="center">
@@ -190,7 +240,12 @@ const Home = ({ characters }) => {
                   width="100px"
                   height="100px"
                 />
-                <Text fontSize="s" fontWeight="bold" textAlign="center">
+                <Text
+                  fontSize="s"
+                  fontWeight="bold"
+                  textAlign="center"
+                  fontFamily="Mochiy Pop P One"
+                >
                   Traditions Renewed
                 </Text>
                 <Text fontSize="s" p="10px" textAlign="center">
@@ -206,7 +261,12 @@ const Home = ({ characters }) => {
                   width="100px"
                   height="100px"
                 />
-                <Text fontSize="s" fontWeight="bold" textAlign="center">
+                <Text
+                  fontSize="s"
+                  fontWeight="bold"
+                  textAlign="center"
+                  fontFamily="Mochiy Pop P One"
+                >
                   Superior Nutrition
                 </Text>
                 <Text fontSize="s" p="10px" textAlign="center">
@@ -221,7 +281,12 @@ const Home = ({ characters }) => {
                   width="100px"
                   height="100px"
                 />
-                <Text fontSize="s" fontWeight="bold" textAlign="center">
+                <Text
+                  fontSize="s"
+                  fontWeight="bold"
+                  textAlign="center"
+                  fontFamily="Mochiy Pop P One"
+                >
                   Residue-Free
                 </Text>
                 <Text fontSize="s" p="10px" textAlign="center">
@@ -236,7 +301,12 @@ const Home = ({ characters }) => {
                   width="100px"
                   height="100px"
                 />
-                <Text fontSize="s" fontWeight="bold" textAlign="center">
+                <Text
+                  fontSize="s"
+                  fontWeight="bold"
+                  textAlign="center"
+                  fontFamily="Mochiy Pop P One"
+                >
                   Sustainability
                 </Text>
                 <Text fontSize="s" p="10px" textAlign="center">
@@ -251,7 +321,12 @@ const Home = ({ characters }) => {
                   width="100px"
                   height="100px"
                 />
-                <Text fontSize="s" fontWeight="bold" textAlign="center">
+                <Text
+                  fontSize="s"
+                  fontWeight="bold"
+                  textAlign="center"
+                  fontFamily="Mochiy Pop P One"
+                >
                   The Best Only
                 </Text>
                 <Text fontSize="s" p="10px" textAlign="center">
@@ -269,6 +344,7 @@ const Home = ({ characters }) => {
           fontWeight="bold"
           textAlign="center"
           mt="100px !important"
+          fontFamily="Mochiy Pop P One"
         >
           Advantages of Cold Pressed Oil
         </Text>
@@ -282,6 +358,7 @@ const Home = ({ characters }) => {
                 mt="20px"
                 width="120px"
                 alignSelf="end"
+                fontFamily="Mochiy Pop P One"
               >
                 No additives, no refinement
               </Text>

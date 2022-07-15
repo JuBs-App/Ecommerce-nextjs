@@ -154,7 +154,13 @@ function Layout({ children }) {
 const Footer = () => {
   return (
     <Stack backgroundColor="#2d2d2d">
-      <SimpleGrid columns={[1, 1, 3, 3]} spacing={15} p="50px">
+      <SimpleGrid
+        columns={[1, 1, 3, 3]}
+        spacing={15}
+        p="50px"
+        width={['100%', '100%', '80%', '80%']}
+        margin="auto"
+      >
         <Stack flexDirection="column" paddingBottom="30px">
           <Text fontWeight="bold" fontSize="s" color="white">
             GOA NATURAL OIL

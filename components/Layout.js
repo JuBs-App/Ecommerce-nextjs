@@ -1,20 +1,24 @@
 import React, { Children, ReactNode } from 'react'
 import {
-  Image,
-  Flex,
-  Button,
-  HStack,
-  chakra,
-  Stack,
-  IconButton,
   Box,
-  useDisclosure,
+  Button,
+  chakra,
+  Flex,
+  HStack,
+  IconButton,
+  Image,
+  SimpleGrid,
+  Stack,
+  Text,
   useColorModeValue,
+  useDisclosure,
 } from '@chakra-ui/react'
 import { css } from '@emotion/react'
 import Link from 'next/link'
 import { HamburgerIcon, CloseIcon, AddIcon } from '@chakra-ui/icons'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
+import { FaTwitter, FaInstagram } from 'react-icons/fa'
+import { MdLocationOn, MdEmail, MdSmartphone, MdFacebook } from 'react-icons/md'
 // import { Avatar, Badge } from 'antd'
 
 const Links = [
@@ -142,6 +146,93 @@ function Layout({ children }) {
         ) : null}
       </chakra.header>
       {children}
+      <Footer />
+    </Stack>
+  )
+}
+
+const Footer = () => {
+  return (
+    <Stack backgroundColor="#2d2d2d">
+      <SimpleGrid
+        columns={[1, 1, 3, 3]}
+        spacing={15}
+        p="50px"
+        width={['100%', '100%', '80%', '80%']}
+        margin="auto"
+      >
+        <Stack flexDirection="column" paddingBottom="30px">
+          <Text fontWeight="bold" fontSize="s" color="white">
+            GOA NATURAL OIL
+          </Text>
+          <Text fontSize="xs" color="#a4a4a4" paddingBottom="20px" width="71%">
+            Whether you have questions about our products, pricing, or anything
+            else, our team is ready to attend you.
+          </Text>
+          <MdLocationOn color="white" />
+          <Text fontSize="xs" color="#a4a4a4" paddingBottom="20px" width="71%">
+            At Post Vele, Besides Hotel Aram Regency, Pune-Bangalore highway,
+            Opp. HP Petroleum, Satara Maharashtra 415517 India
+          </Text>
+          <MdEmail color="white" />
+          <Text fontSize="xs" color="#a4a4a4" paddingBottom="20px">
+            info@orgatma.com | support@orgatma.com
+          </Text>
+          <Stack flexDirection="row" alignItems="center">
+            <MdSmartphone color="white" />
+            <Text fontSize="xs" color="#a4a4a4" paddingLeft="10px">
+              +91 89562 36956
+            </Text>
+          </Stack>
+        </Stack>
+        <Stack flexDirection="column" paddingBottom="30px">
+          <Text fontWeight="bold" fontSize="s" color="white">
+            QUICK LINKS
+          </Text>
+          <Link href="/about-us">
+            <Text fontSize="xs" color="#a4a4a4">
+              About us
+            </Text>
+          </Link>
+          <Link href="/contact-us">
+            <Text fontSize="xs" color="#a4a4a4">
+              Contact us
+            </Text>
+          </Link>
+          <Link href="/products">
+            <Text fontSize="xs" color="#a4a4a4">
+              View all products
+            </Text>
+          </Link>
+          <Link href="/blog">
+            <Text fontSize="xs" color="#a4a4a4">
+              Blog
+            </Text>
+          </Link>
+        </Stack>
+        <Stack flexDirection="column" paddingBottom="30px">
+          <Text fontWeight="bold" fontSize="s" color="white">
+            Follow us on Social Media
+          </Text>
+          <Stack flexDirection="row">
+            <Stack mt="0px !important" paddingRight="5px">
+              <Link href="">
+                <MdFacebook color="white" />
+              </Link>
+            </Stack>
+            <Stack mt="0px !important" paddingRight="5px">
+              <Link href="">
+                <FaTwitter color="white" />
+              </Link>
+            </Stack>
+            <Stack mt="0px !important" paddingRight="5px">
+              <Link href="">
+                <FaInstagram color="white" />
+              </Link>
+            </Stack>
+          </Stack>
+        </Stack>
+      </SimpleGrid>
     </Stack>
   )
 }

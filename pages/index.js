@@ -193,7 +193,7 @@ const Home = ({ characters }) => {
         columns={[1, 1, 2, 2]}
         spacing={5}
         mt="100px !important"
-        backgroundColor="antiquewhite"
+        backgroundColor="#cc8d89"
       >
         <Image
           src="/flour.png"
@@ -203,7 +203,7 @@ const Home = ({ characters }) => {
           alignSelf="center"
         />
         <Stack>
-          <Card backgroundColor="#cc8d89">
+          <Card backgroundColor="#cc8d89" borderLess={true}>
             <Text
               fontSize="s"
               fontWeight="bold"
@@ -603,15 +603,15 @@ const Home = ({ characters }) => {
   )
 }
 
-const Card = ({ children, ...props }) => {
+const Card = ({ children, borderLess = false, ...props }) => {
   return (
     <Stack
       p={8}
       borderRadius="md"
       bg="white"
-      boxShadow="md"
+      boxShadow={borderLess ? 'none' : 'md'}
       borderColor="gray.200"
-      borderWidth={1}
+      borderWidth={borderLess ? 0 : 1}
       alignItems="center"
       {...props}
     >

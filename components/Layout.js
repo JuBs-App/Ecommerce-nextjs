@@ -63,7 +63,7 @@ function Layout({ children }) {
             display={{ md: 'none' }}
             onClick={isOpen ? onClose : onOpen}
           />
-          <Image src={'/logo.png'} h="50px" />
+          <Image src={'/Goa-natural/logo.png'} h="50px" />
 
           <HStack as="nav" spacing="5" display={{ base: 'none', md: 'flex' }}>
             <Link href="/">

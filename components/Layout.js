@@ -17,7 +17,8 @@ import { css } from '@emotion/react'
 import Link from 'next/link'
 import { HamburgerIcon, CloseIcon, AddIcon } from '@chakra-ui/icons'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
-import { MdLocationOn, MdEmail, MdSmartphone } from 'react-icons/md'
+import { FaTwitter, FaInstagram } from 'react-icons/fa'
+import { MdLocationOn, MdEmail, MdSmartphone, MdFacebook } from 'react-icons/md'
 // import { Avatar, Badge } from 'antd'
 
 const Links = [
@@ -154,7 +155,7 @@ const Footer = () => {
   return (
     <Stack backgroundColor="#2d2d2d">
       <SimpleGrid columns={[1, 1, 3, 3]} spacing={15} p="50px">
-        <Stack flexDirection="column">
+        <Stack flexDirection="column" paddingBottom="30px">
           <Text fontWeight="bold" fontSize="s" color="white">
             GOA NATURAL OIL
           </Text>
@@ -178,7 +179,7 @@ const Footer = () => {
             </Text>
           </Stack>
         </Stack>
-        <Stack flexDirection="column">
+        <Stack flexDirection="column" paddingBottom="30px">
           <Text fontWeight="bold" fontSize="s" color="white">
             QUICK LINKS
           </Text>
@@ -203,7 +204,28 @@ const Footer = () => {
             </Text>
           </Link>
         </Stack>
-        <Stack></Stack>
+        <Stack flexDirection="column" paddingBottom="30px">
+          <Text fontWeight="bold" fontSize="s" color="white">
+            Follow us on Social Media
+          </Text>
+          <Stack flexDirection="row">
+            <Stack mt="0px !important" paddingRight="5px">
+              <Link href="">
+                <MdFacebook color="white" />
+              </Link>
+            </Stack>
+            <Stack mt="0px !important" paddingRight="5px">
+              <Link href="">
+                <FaTwitter color="white" />
+              </Link>
+            </Stack>
+            <Stack mt="0px !important" paddingRight="5px">
+              <Link href="">
+                <FaInstagram color="white" />
+              </Link>
+            </Stack>
+          </Stack>
+        </Stack>
       </SimpleGrid>
     </Stack>
   )

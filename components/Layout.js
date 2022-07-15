@@ -1,20 +1,23 @@
 import React, { Children, ReactNode } from 'react'
 import {
-  Image,
-  Flex,
-  Button,
-  HStack,
-  chakra,
-  Stack,
-  IconButton,
   Box,
-  useDisclosure,
+  Button,
+  chakra,
+  Flex,
+  HStack,
+  IconButton,
+  Image,
+  SimpleGrid,
+  Stack,
+  Text,
   useColorModeValue,
+  useDisclosure,
 } from '@chakra-ui/react'
 import { css } from '@emotion/react'
 import Link from 'next/link'
 import { HamburgerIcon, CloseIcon, AddIcon } from '@chakra-ui/icons'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
+import { MdLocationOn, MdEmail, MdSmartphone } from 'react-icons/md'
 // import { Avatar, Badge } from 'antd'
 
 const Links = [
@@ -147,6 +150,39 @@ function Layout({ children }) {
   )
 }
 
-const Footer = () => {}
+const Footer = () => {
+  return (
+    <Stack backgroundColor="#2d2d2d">
+      <SimpleGrid columns={[1, 1, 3, 3]} spacing={15} p="50px">
+        <Stack flexDirection="column">
+          <Text fontWeight="bold" fontSize="s" color="white">
+            GOA NATURAL OIL
+          </Text>
+          <Text fontSize="xs" color="#a4a4a4" paddingBottom="20px" width="71%">
+            Whether you have questions about our products, pricing, or anything
+            else, our team is ready to attend you.
+          </Text>
+          <MdLocationOn color="white" />
+          <Text fontSize="xs" color="#a4a4a4" paddingBottom="20px" width="71%">
+            At Post Vele, Besides Hotel Aram Regency, Pune-Bangalore highway,
+            Opp. HP Petroleum, Satara Maharashtra 415517 India
+          </Text>
+          <MdEmail color="white" />
+          <Text fontSize="xs" color="#a4a4a4" paddingBottom="20px">
+            info@orgatma.com | support@orgatma.com
+          </Text>
+          <Stack flexDirection="row" alignItems="center">
+            <MdSmartphone color="white" />
+            <Text fontSize="xs" color="#a4a4a4" paddingLeft="10px">
+              +91 89562 36956
+            </Text>
+          </Stack>
+        </Stack>
+        <Stack flexDirection="column"></Stack>
+        <Stack></Stack>
+      </SimpleGrid>
+    </Stack>
+  )
+}
 
 export default Layout

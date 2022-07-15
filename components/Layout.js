@@ -178,7 +178,31 @@ const Footer = () => {
             </Text>
           </Stack>
         </Stack>
-        <Stack flexDirection="column"></Stack>
+        <Stack flexDirection="column">
+          <Text fontWeight="bold" fontSize="s" color="white">
+            QUICK LINKS
+          </Text>
+          <Link href="/about-us">
+            <Text fontSize="xs" color="#a4a4a4">
+              About us
+            </Text>
+          </Link>
+          <Link href="/contact-us">
+            <Text fontSize="xs" color="#a4a4a4">
+              Contact us
+            </Text>
+          </Link>
+          <Link href="/products">
+            <Text fontSize="xs" color="#a4a4a4">
+              View all products
+            </Text>
+          </Link>
+          <Link href="/blog">
+            <Text fontSize="xs" color="#a4a4a4">
+              Blog
+            </Text>
+          </Link>
+        </Stack>
         <Stack></Stack>
       </SimpleGrid>
     </Stack>

@@ -75,7 +75,7 @@ const Login = (props) => {
   })
 
   return (
-    <Stack bg="gray.50" w="100vw" h="100vh" align="center" justify="center">
+    <Stack w="100vw" h="100vh" align="center" justify="center">
       {/* <Head>
         <title>Sign in to Goa natural</title>
       </Head> */}

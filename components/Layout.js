@@ -213,29 +213,30 @@ const Footer = () => {
               Rewards
             </Text>
           </Link>
-        </Stack>
-        <Stack flexDirection="column" paddingBottom="30px">
-          <Text fontWeight="bold" fontSize="s" color="white">
-            Follow us on Social Media
-          </Text>
-          <Stack flexDirection="row">
-            <Stack mt="0px !important" paddingRight="5px">
-              <Link href="">
-                <MdFacebook color="white" />
-              </Link>
-            </Stack>
-            <Stack mt="0px !important" paddingRight="5px">
-              <Link href="">
-                <FaTwitter color="white" />
-              </Link>
-            </Stack>
-            <Stack mt="0px !important" paddingRight="5px">
-              <Link href="">
-                <FaInstagram color="white" />
-              </Link>
+          <Stack mt="30px !important">
+            <Text fontWeight="bold" fontSize="s" color="white">
+              Follow us on Social Media
+            </Text>
+            <Stack flexDirection="row">
+              <Stack mt="0px !important" paddingRight="5px">
+                <Link href="">
+                  <MdFacebook color="white" />
+                </Link>
+              </Stack>
+              <Stack mt="0px !important" paddingRight="5px">
+                <Link href="">
+                  <FaTwitter color="white" />
+                </Link>
+              </Stack>
+              <Stack mt="0px !important" paddingRight="5px">
+                <Link href="">
+                  <FaInstagram color="white" />
+                </Link>
+              </Stack>
             </Stack>
           </Stack>
         </Stack>
+        <Stack flexDirection="column" paddingBottom="30px"></Stack>
       </SimpleGrid>
     </Stack>
   )

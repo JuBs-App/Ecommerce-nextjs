@@ -7,6 +7,7 @@ import {
   HStack,
   IconButton,
   Image,
+  Input,
   SimpleGrid,
   Stack,
   Text,
@@ -236,7 +237,45 @@ const Footer = () => {
             </Stack>
           </Stack>
         </Stack>
-        <Stack flexDirection="column" paddingBottom="30px"></Stack>
+        <Stack flexDirection="column" paddingBottom="30px">
+          <Text fontWeight="bold" fontSize="s" color="white">
+            NEWSLETTER
+          </Text>
+          <Text fontSize="xs" color="#a4a4a4" paddingBottom="20px">
+            Subscribe to our newsletter & stay updated about latest products,
+            offers and blogs
+          </Text>
+          <Input
+            placeholder="Enter email address"
+            backgroundColor="white"
+            borderRadius="0px"
+          />
+          <Button colorScheme="green" width="fit-content" borderRadius="0px">
+            Subscribe
+          </Button>
+
+          <Text
+            fontWeight="bold"
+            fontSize="s"
+            color="white"
+            mt="30px !important"
+          >
+            We are also available on…
+          </Text>
+          <Stack flexDirection="row">
+            <Link href="https://www.amazon.in">
+              <Image src="/mini-amazon.png" h="30px" w="75px" />
+            </Link>
+            <Link href="https://www.flipkart.com">
+              <Image
+                src="/mini-flipkart.png"
+                h="30px"
+                w="75px"
+                mt="0px !important"
+              />
+            </Link>
+          </Stack>
+        </Stack>
       </SimpleGrid>
     </Stack>
   )

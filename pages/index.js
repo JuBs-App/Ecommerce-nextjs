@@ -39,7 +39,7 @@ const Home = ({ characters }) => {
         <Carousel.Item interval={1000}>
           <Image
             className="d-block w-100"
-            src="/cold-pressed-coconut-oil-80.jpg"
+            src="/Goa-natural/banner/coconut.jpg"
             alt="First slide"
             height="450px"
           />
@@ -55,7 +55,7 @@ const Home = ({ characters }) => {
         <Carousel.Item interval={1000}>
           <Image
             className="d-block w-100"
-            src="/cold-pressed-groundnut-oil-70.jpg"
+            src="/Goa-natural/banner/groundnut.jpg"
             alt="Second slide"
             height="450px"
           />
@@ -71,7 +71,7 @@ const Home = ({ characters }) => {
         <Carousel.Item interval={1000}>
           <Image
             className="d-block w-100"
-            src="/cold-pressed-mustard-oil-70.jpg"
+            src="/Goa-natural/banner/safflower.jpg"
             alt="Third slide"
             height="450px"
           />
@@ -88,7 +88,7 @@ const Home = ({ characters }) => {
         <Carousel.Item interval={1000}>
           <Image
             className="d-block w-100"
-            src="/Goa-natural/Goa-natural05.png"
+            src="/Goa-natural/banner/turmeric.jpg"
             alt="Fourth slide"
             height="450px"
           />

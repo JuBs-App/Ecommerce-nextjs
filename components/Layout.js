@@ -7,6 +7,7 @@ import {
   HStack,
   IconButton,
   Image,
+  Input,
   SimpleGrid,
   Stack,
   Text,
@@ -163,25 +164,24 @@ const Footer = () => {
       >
         <Stack flexDirection="column" paddingBottom="30px">
           <Text fontWeight="bold" fontSize="s" color="white">
-            GOA NATURAL OIL
+            GOA NATURAL
           </Text>
           <Text fontSize="xs" color="#a4a4a4" paddingBottom="20px" width="71%">
-            Whether you have questions about our products, pricing, or anything
-            else, our team is ready to attend you.
+            The Original Cold Pressed Oil from Goa, India
           </Text>
           <MdLocationOn color="white" />
           <Text fontSize="xs" color="#a4a4a4" paddingBottom="20px" width="71%">
-            At Post Vele, Besides Hotel Aram Regency, Pune-Bangalore highway,
-            Opp. HP Petroleum, Satara Maharashtra 415517 India
+            Plot 34, Kakoda Industrial Estate – Phase III, Kakoda, Curchorem,
+            Goa, India 403706
           </Text>
           <MdEmail color="white" />
           <Text fontSize="xs" color="#a4a4a4" paddingBottom="20px">
-            info@orgatma.com | support@orgatma.com
+            adwingoa@gmail.com | goanatural2222@gmail.com
           </Text>
           <Stack flexDirection="row" alignItems="center">
             <MdSmartphone color="white" />
             <Text fontSize="xs" color="#a4a4a4" paddingLeft="10px">
-              +91 89562 36956
+              9822168979 | 8007774122 | 8605070650
             </Text>
           </Stack>
         </Stack>
@@ -209,27 +209,71 @@ const Footer = () => {
               Blog
             </Text>
           </Link>
+          <Link href="/rewards">
+            <Text fontSize="xs" color="#a4a4a4">
+              Rewards
+            </Text>
+          </Link>
+          <Stack mt="30px !important">
+            <Text fontWeight="bold" fontSize="s" color="white">
+              Follow us on Social Media
+            </Text>
+            <Stack flexDirection="row">
+              <Stack mt="0px !important" paddingRight="5px">
+                <Link href="">
+                  <MdFacebook color="white" />
+                </Link>
+              </Stack>
+              <Stack mt="0px !important" paddingRight="5px">
+                <Link href="">
+                  <FaTwitter color="white" />
+                </Link>
+              </Stack>
+              <Stack mt="0px !important" paddingRight="5px">
+                <Link href="">
+                  <FaInstagram color="white" />
+                </Link>
+              </Stack>
+            </Stack>
+          </Stack>
         </Stack>
         <Stack flexDirection="column" paddingBottom="30px">
           <Text fontWeight="bold" fontSize="s" color="white">
-            Follow us on Social Media
+            NEWSLETTER
+          </Text>
+          <Text fontSize="xs" color="#a4a4a4" paddingBottom="20px">
+            Subscribe to our newsletter & stay updated about latest products,
+            offers and blogs
+          </Text>
+          <Input
+            placeholder="Enter email address"
+            backgroundColor="white"
+            borderRadius="0px"
+          />
+          <Button colorScheme="green" width="fit-content" borderRadius="0px">
+            Subscribe
+          </Button>
+
+          <Text
+            fontWeight="bold"
+            fontSize="s"
+            color="white"
+            mt="30px !important"
+          >
+            We are also available on…
           </Text>
           <Stack flexDirection="row">
-            <Stack mt="0px !important" paddingRight="5px">
-              <Link href="">
-                <MdFacebook color="white" />
-              </Link>
-            </Stack>
-            <Stack mt="0px !important" paddingRight="5px">
-              <Link href="">
-                <FaTwitter color="white" />
-              </Link>
-            </Stack>
-            <Stack mt="0px !important" paddingRight="5px">
-              <Link href="">
-                <FaInstagram color="white" />
-              </Link>
-            </Stack>
+            <Link href="https://www.amazon.in">
+              <Image src="/mini-amazon.png" h="30px" w="75px" />
+            </Link>
+            <Link href="https://www.flipkart.com">
+              <Image
+                src="/mini-flipkart.png"
+                h="30px"
+                w="75px"
+                mt="0px !important"
+              />
+            </Link>
           </Stack>
         </Stack>
       </SimpleGrid>

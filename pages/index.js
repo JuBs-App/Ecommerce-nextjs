@@ -235,10 +235,11 @@ const Home = ({ characters }) => {
             <SimpleGrid columns={[1, 2, 3, 3]} spacing={5}>
               <Stack p="5px" alignItems="center">
                 <Image
-                  src="/onlybest-90.png"
+                  src="/onlybest.jpg"
                   alt="onlybest"
                   width="100px"
                   height="100px"
+                  borderRadius="10px"
                 />
                 <Text
                   fontSize="s"
@@ -255,10 +256,11 @@ const Home = ({ characters }) => {
               </Stack>
               <Stack p="5px" alignItems="center">
                 <Image
-                  src="/traditional-90.png"
+                  src="/traditional.jpg"
                   alt="traditional"
                   width="100px"
                   height="100px"
+                  borderRadius="10px"
                 />
                 <Text
                   fontSize="s"
@@ -276,10 +278,11 @@ const Home = ({ characters }) => {
               </Stack>
               <Stack p="5px" alignItems="center">
                 <Image
-                  src="/nutritive-90.png"
+                  src="/nutritive.jpeg"
                   alt="nutritive"
                   width="100px"
                   height="100px"
+                  borderRadius="10px"
                 />
                 <Text
                   fontSize="s"
@@ -296,10 +299,11 @@ const Home = ({ characters }) => {
               </Stack>
               <Stack p="5px" alignItems="center">
                 <Image
-                  src="/residue-free-90.png"
+                  src="/residue-free.png"
                   alt="residue-free"
                   width="100px"
                   height="100px"
+                  borderRadius="10px"
                 />
                 <Text
                   fontSize="s"
@@ -316,10 +320,11 @@ const Home = ({ characters }) => {
               </Stack>
               <Stack p="5px" alignItems="center">
                 <Image
-                  src="/sustainable-90.png"
+                  src="/sustainable.png"
                   alt="sustainable"
                   width="100px"
                   height="100px"
+                  borderRadius="10px"
                 />
                 <Text
                   fontSize="s"
@@ -336,10 +341,11 @@ const Home = ({ characters }) => {
               </Stack>
               <Stack p="5px" alignItems="center">
                 <Image
-                  src="/and-only-best-90.png"
+                  src="/and-only-best.png"
                   alt="and-only-best"
                   width="100px"
                   height="100px"
+                  borderRadius="10px"
                 />
                 <Text
                   fontSize="s"

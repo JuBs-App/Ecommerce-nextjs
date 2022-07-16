@@ -116,10 +116,11 @@ const Home = ({ characters }) => {
         <Stack p="5px" alignItems="center">
           <Card height="100%" backgroundColor="#cc8d89">
             <Image
-              src="/handpicked-ingredients.jpg"
+              src="/handpicked-ingredients.png"
               alt="handpicked-ingredients"
               width="100px"
               height="100px"
+              borderRadius="10px"
             />
             <Text
               fontSize="s"
@@ -141,8 +142,9 @@ const Home = ({ characters }) => {
             <Image
               src="/carbon-footprint.jpg"
               alt="carbon-footprint"
-              width="100px"
+              width="125px"
               height="100px"
+              borderRadius="10px"
             />
             <Text
               fontSize="s"
@@ -161,10 +163,11 @@ const Home = ({ characters }) => {
         <Stack p="5px" alignItems="center">
           <Card height="100%" backgroundColor="#cc8d89">
             <Image
-              src="/empowerment.jpg"
+              src="/farmer-empowerment.webp"
               alt="empowerment"
-              width="100px"
+              width="125px"
               height="100px"
+              borderRadius="10px"
             />
             <Text
               fontSize="s"
@@ -184,10 +187,11 @@ const Home = ({ characters }) => {
         <Stack p="5px" alignItems="center">
           <Card height="100%" backgroundColor="#cc8d89">
             <Image
-              src="/package.jpg"
+              src="/package.png"
               alt="package"
-              width="100px"
+              width="125px"
               height="100px"
+              borderRadius="10px"
             />
             <Text
               fontSize="s"

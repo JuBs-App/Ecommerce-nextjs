@@ -39,22 +39,6 @@ const Home = ({ characters }) => {
         <Carousel.Item interval={1000}>
           <Image
             className="d-block w-100"
-            src="/Goa-natural/Goa-natural05.png"
-            alt="First slide"
-            height="450px"
-          />
-          {/* <Carousel.Caption>
-            <Heading as="h1" size="4xl" noOfLines={1}>
-              cold pressed coconut oil
-            </Heading>
-            <a href="#services">
-            <Button className="book-btn">Book Now</Button>
-            </a>
-          </Carousel.Caption> */}
-        </Carousel.Item>
-        <Carousel.Item interval={1000}>
-          <Image
-            className="d-block w-100"
             src="/cold-pressed-coconut-oil-80.jpg"
             alt="First slide"
             height="450px"
@@ -100,6 +84,22 @@ const Home = ({ characters }) => {
             </a>
           </Carousel.Caption> 
           */}
+        </Carousel.Item>
+        <Carousel.Item interval={1000}>
+          <Image
+            className="d-block w-100"
+            src="/Goa-natural/Goa-natural05.png"
+            alt="Fourth slide"
+            height="450px"
+          />
+          {/* <Carousel.Caption>
+            <Heading as="h1" size="4xl" noOfLines={1}>
+              cold pressed coconut oil
+            </Heading>
+            <a href="#services">
+            <Button className="book-btn">Book Now</Button>
+            </a>
+          </Carousel.Caption> */}
         </Carousel.Item>
       </Carousel>
       <Stack textAlign="center">

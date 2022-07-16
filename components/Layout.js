@@ -20,6 +20,7 @@ import { HamburgerIcon, CloseIcon, AddIcon } from '@chakra-ui/icons'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
 import { FaTwitter, FaInstagram } from 'react-icons/fa'
 import { MdLocationOn, MdEmail, MdSmartphone, MdFacebook } from 'react-icons/md'
+import FloatingWhatsapp from './FloatingWhatsapp'
 // import { Avatar, Badge } from 'antd'
 
 const Links = [
@@ -147,6 +148,7 @@ function Layout({ children }) {
         ) : null}
       </chakra.header>
       {children}
+      <FloatingWhatsapp />
       <Footer />
     </Stack>
   )

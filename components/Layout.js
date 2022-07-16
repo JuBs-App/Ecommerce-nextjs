@@ -163,25 +163,24 @@ const Footer = () => {
       >
         <Stack flexDirection="column" paddingBottom="30px">
           <Text fontWeight="bold" fontSize="s" color="white">
-            GOA NATURAL OIL
+            GOA NATURAL
           </Text>
           <Text fontSize="xs" color="#a4a4a4" paddingBottom="20px" width="71%">
-            Whether you have questions about our products, pricing, or anything
-            else, our team is ready to attend you.
+            The Original Cold Pressed Oil from Goa, India
           </Text>
           <MdLocationOn color="white" />
           <Text fontSize="xs" color="#a4a4a4" paddingBottom="20px" width="71%">
-            At Post Vele, Besides Hotel Aram Regency, Pune-Bangalore highway,
-            Opp. HP Petroleum, Satara Maharashtra 415517 India
+            Plot 34, Kakoda Industrial Estate – Phase III, Kakoda, Curchorem,
+            Goa, India 403706
           </Text>
           <MdEmail color="white" />
           <Text fontSize="xs" color="#a4a4a4" paddingBottom="20px">
-            info@orgatma.com | support@orgatma.com
+            adwingoa@gmail.com | goanatural2222@gmail.com
           </Text>
           <Stack flexDirection="row" alignItems="center">
             <MdSmartphone color="white" />
             <Text fontSize="xs" color="#a4a4a4" paddingLeft="10px">
-              +91 89562 36956
+              9822168979 | 8007774122 | 8605070650
             </Text>
           </Stack>
         </Stack>
@@ -207,6 +206,11 @@ const Footer = () => {
           <Link href="/blog">
             <Text fontSize="xs" color="#a4a4a4">
               Blog
+            </Text>
+          </Link>
+          <Link href="/rewards">
+            <Text fontSize="xs" color="#a4a4a4">
+              Rewards
             </Text>
           </Link>
         </Stack>

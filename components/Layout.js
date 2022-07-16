@@ -222,17 +222,17 @@ const Footer = () => {
             </Text>
             <Stack flexDirection="row">
               <Stack mt="0px !important" paddingRight="5px">
-                <Link href="">
+                <Link href="https://facebook.com/" passHref>
                   <MdFacebook color="white" />
                 </Link>
               </Stack>
               <Stack mt="0px !important" paddingRight="5px">
-                <Link href="">
+                <Link href="https://twitter.com/" passHref>
                   <FaTwitter color="white" />
                 </Link>
               </Stack>
               <Stack mt="0px !important" paddingRight="5px">
-                <Link href="">
+                <Link href="https://www.instagram.com/" passHref>
                   <FaInstagram color="white" />
                 </Link>
               </Stack>

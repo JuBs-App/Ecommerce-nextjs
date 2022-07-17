@@ -61,19 +61,81 @@ const Links = [
   },
 ]
 
-const NavLink = ({ children, path }) => (
-  <Box
-    px={2}
-    py={1}
-    rounded={'md'}
-    _hover={{
-      textDecoration: 'none',
-      bg: useColorModeValue('gray.200', 'gray.700'),
-    }}
-  >
-    <Link href={path}>{children}</Link>
-  </Box>
-)
+const NavLink = ({ children, path, subMenu }) => {
+  const {
+    isOpen: isOpenOnHover,
+    onOpen: onOpenOnHover,
+    onClose: onCloseOnHover,
+  } = useDisclosure()
+
+  if (children == 'Products') {
+    return (
+      <Box
+        px={2}
+        py={1}
+        rounded={'md'}
+        _hover={{
+          textDecoration: 'none',
+          bg: useColorModeValue('gray.200', 'gray.700'),
+        }}
+      >
+        <Menu isOpen={isOpenOnHover}>
+          <MenuButton
+            variant="ghost"
+            mx={1}
+            py={[1, 2, 2]}
+            px={4}
+            borderRadius={5}
+            _hover={{ bg: useColorModeValue('#bde8b5', '#bde8b5') }}
+            aria-label="Courses"
+            fontWeight="normal"
+            onMouseEnter={onOpenOnHover}
+            onMouseLeave={onCloseOnHover}
+          >
+            Products {isOpenOnHover ? <ChevronUpIcon /> : <ChevronDownIcon />}
+          </MenuButton>
+          <MenuList
+            onMouseEnter={onOpenOnHover}
+            onMouseLeave={onCloseOnHover}
+            zIndex="200"
+            backgroundColor="#bde8b5"
+            borderRadius="0px"
+          >
+            <Link href="/products">
+              <MenuItem>All products</MenuItem>
+            </Link>
+            <Link href="/products/coconut-oil">
+              <MenuItem>Coconut oil</MenuItem>
+            </Link>
+            <Link href="/products/groundnut-oil">
+              <MenuItem>Groundnut oil</MenuItem>
+            </Link>
+            <Link href="/products/safflower-oil">
+              <MenuItem>Safflower oil</MenuItem>
+            </Link>
+            <Link href="/products/turmeric-powder">
+              <MenuItem>Turmeric powder</MenuItem>
+            </Link>
+          </MenuList>
+        </Menu>
+      </Box>
+    )
+  } else {
+    return (
+      <Box
+        px={2}
+        py={1}
+        rounded={'md'}
+        _hover={{
+          textDecoration: 'none',
+          bg: useColorModeValue('gray.200', 'gray.700'),
+        }}
+      >
+        <Link href={path}>{children}</Link>
+      </Box>
+    )
+  }
+}
 
 function Layout({ children }) {
   const { isOpen, onOpen, onClose } = useDisclosure()

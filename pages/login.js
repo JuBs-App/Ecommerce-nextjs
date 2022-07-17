@@ -4,7 +4,6 @@ import {
   FormControl,
   FormErrorMessage,
   FormLabel,
-  Head,
   Image,
   Input,
   InputGroup,
@@ -16,6 +15,7 @@ import {
 } from '@chakra-ui/react'
 import axios from 'axios'
 import { useRouter } from 'next/router'
+import Head from 'next/head'
 import Link from 'next/link'
 import React, { useContext, useEffect, useState } from 'react'
 import { Store } from '../utils/Store'
@@ -76,9 +76,9 @@ const Login = (props) => {
 
   return (
     <Stack w="100vw" h="100vh" align="center" justify="center">
-      {/* <Head>
+      <Head>
         <title>Sign in to Goa natural</title>
-      </Head> */}
+      </Head>
 
       <Container py={2}>
         <Stack

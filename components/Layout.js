@@ -88,31 +88,41 @@ function Layout({ children }) {
               <Button variant="nav"> Home </Button>
             </Link>
             <Menu isOpen={isOpenOnHover}>
-              <MenuButton
-                variant="ghost"
-                mx={1}
-                py={[1, 2, 2]}
-                px={4}
-                borderRadius={5}
-                _hover={{ bg: useColorModeValue('#bde8b5', '#bde8b5') }}
-                aria-label="Courses"
-                fontWeight="normal"
-                onMouseEnter={onOpenOnHover}
-                onMouseLeave={onCloseOnHover}
-              >
-                Products{' '}
-                {isOpenOnHover ? <ChevronUpIcon /> : <ChevronDownIcon />}
-              </MenuButton>
+              <Link href="/products">
+                <MenuButton
+                  variant="ghost"
+                  mx={1}
+                  py={[1, 2, 2]}
+                  px={4}
+                  borderRadius={5}
+                  _hover={{ bg: useColorModeValue('#bde8b5', '#bde8b5') }}
+                  aria-label="Courses"
+                  fontWeight="normal"
+                  onMouseEnter={onOpenOnHover}
+                  onMouseLeave={onCloseOnHover}
+                >
+                  Products{' '}
+                  {isOpenOnHover ? <ChevronUpIcon /> : <ChevronDownIcon />}
+                </MenuButton>
+              </Link>
               <MenuList
                 onMouseEnter={onOpenOnHover}
                 onMouseLeave={onCloseOnHover}
                 zIndex="200"
                 backgroundColor="#bde8b5"
               >
-                <MenuItem>Coconut oil</MenuItem>
-                <MenuItem>Groundnut oil</MenuItem>
-                <MenuItem>Safflower oil</MenuItem>
-                <MenuItem>Turmeric powder</MenuItem>
+                <Link href="/products/coconut-oil">
+                  <MenuItem>Coconut oil</MenuItem>
+                </Link>
+                <Link href="/products/groundnut-oil">
+                  <MenuItem>Groundnut oil</MenuItem>
+                </Link>
+                <Link href="/products/safflower-oil">
+                  <MenuItem>Safflower oil</MenuItem>
+                </Link>
+                <Link href="/products/turmeric-powder">
+                  <MenuItem>Turmeric powder</MenuItem>
+                </Link>
               </MenuList>
             </Menu>
             <Link href="/about-us">

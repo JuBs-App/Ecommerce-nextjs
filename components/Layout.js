@@ -8,6 +8,10 @@ import {
   IconButton,
   Image,
   Input,
+  MenuItem,
+  Menu,
+  MenuButton,
+  MenuList,
   SimpleGrid,
   Stack,
   Text,
@@ -20,6 +24,7 @@ import { HamburgerIcon, CloseIcon, AddIcon } from '@chakra-ui/icons'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
 import { FaTwitter, FaInstagram } from 'react-icons/fa'
 import { MdLocationOn, MdEmail, MdSmartphone, MdFacebook } from 'react-icons/md'
+import { ChevronDownIcon, ChevronUpIcon } from '@chakra-ui/icons'
 import FloatingWhatsapp from './FloatingWhatsapp'
 // import { Avatar, Badge } from 'antd'
 
@@ -58,6 +63,13 @@ const NavLink = ({ children, path }) => (
 
 function Layout({ children }) {
   const { isOpen, onOpen, onClose } = useDisclosure()
+
+  const {
+    isOpen: isOpenOnHover,
+    onOpen: onOpenOnHover,
+    onClose: onCloseOnHover,
+  } = useDisclosure()
+
   return (
     <Stack backgroundColor="#93e683">
       <chakra.header id="header">
@@ -75,6 +87,33 @@ function Layout({ children }) {
             <Link href="/">
               <Button variant="nav"> Home </Button>
             </Link>
+            <Menu isOpen={isOpenOnHover}>
+              <MenuButton
+                variant="ghost"
+                mx={1}
+                py={[1, 2, 2]}
+                px={4}
+                borderRadius={5}
+                _hover={{ bg: useColorModeValue('gray.100', 'gray.700') }}
+                aria-label="Courses"
+                fontWeight="normal"
+                onMouseEnter={onOpenOnHover}
+                onMouseLeave={onCloseOnHover}
+              >
+                Products{' '}
+                {isOpenOnHover ? <ChevronUpIcon /> : <ChevronDownIcon />}
+              </MenuButton>
+              <MenuList
+                onMouseEnter={onOpenOnHover}
+                onMouseLeave={onCloseOnHover}
+                zIndex="200"
+              >
+                <MenuItem>Coconut oil</MenuItem>
+                <MenuItem>Groundnut oil</MenuItem>
+                <MenuItem>Safflower oil</MenuItem>
+                <MenuItem>Turmeric powder</MenuItem>
+              </MenuList>
+            </Menu>
             <Link href="/about-us">
               <Button variant="nav"> About us </Button>
             </Link>

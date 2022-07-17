@@ -59,7 +59,7 @@ const NavLink = ({ children, path }) => (
 function Layout({ children }) {
   const { isOpen, onOpen, onClose } = useDisclosure()
   return (
-    <Stack backgroundColor="#9dfaf7">
+    <Stack backgroundColor="#93e683">
       <chakra.header id="header">
         <Flex w="100%" px="6" py="5" align="center" justify="space-between">
           <IconButton

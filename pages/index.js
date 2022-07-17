@@ -116,7 +116,7 @@ const Home = ({ characters }) => {
         <Stack p="5px" alignItems="center">
           <Card height="100%" backgroundColor="#cc8d89">
             <Image
-              src="/handpicked-ingredients.png"
+              src="/handpicked-ingredients.jpg"
               alt="handpicked-ingredients"
               width="100px"
               height="100px"
@@ -163,7 +163,7 @@ const Home = ({ characters }) => {
         <Stack p="5px" alignItems="center">
           <Card height="100%" backgroundColor="#cc8d89">
             <Image
-              src="/farmer-empowerment.webp"
+              src="/empowerment.jpg"
               alt="empowerment"
               width="125px"
               height="100px"
@@ -187,7 +187,7 @@ const Home = ({ characters }) => {
         <Stack p="5px" alignItems="center">
           <Card height="100%" backgroundColor="#cc8d89">
             <Image
-              src="/package.png"
+              src="/package.jpg"
               alt="package"
               width="125px"
               height="100px"
@@ -235,7 +235,7 @@ const Home = ({ characters }) => {
             <SimpleGrid columns={[1, 2, 3, 3]} spacing={5}>
               <Stack p="5px" alignItems="center">
                 <Image
-                  src="/onlybest.jpg"
+                  src="/onlybest-90.jpg"
                   alt="onlybest"
                   width="100px"
                   height="100px"
@@ -256,7 +256,7 @@ const Home = ({ characters }) => {
               </Stack>
               <Stack p="5px" alignItems="center">
                 <Image
-                  src="/traditional.jpg"
+                  src="/traditional-90.png"
                   alt="traditional"
                   width="100px"
                   height="100px"
@@ -278,7 +278,7 @@ const Home = ({ characters }) => {
               </Stack>
               <Stack p="5px" alignItems="center">
                 <Image
-                  src="/nutritive.jpeg"
+                  src="/nutritive-90.png"
                   alt="nutritive"
                   width="100px"
                   height="100px"
@@ -299,7 +299,7 @@ const Home = ({ characters }) => {
               </Stack>
               <Stack p="5px" alignItems="center">
                 <Image
-                  src="/residue-free.png"
+                  src="/residue-free-90.png"
                   alt="residue-free"
                   width="100px"
                   height="100px"
@@ -320,7 +320,7 @@ const Home = ({ characters }) => {
               </Stack>
               <Stack p="5px" alignItems="center">
                 <Image
-                  src="/sustainable.png"
+                  src="/sustainable-90.png"
                   alt="sustainable"
                   width="100px"
                   height="100px"
@@ -341,7 +341,7 @@ const Home = ({ characters }) => {
               </Stack>
               <Stack p="5px" alignItems="center">
                 <Image
-                  src="/and-only-best.png"
+                  src="/and-only-best-90.png"
                   alt="and-only-best"
                   width="100px"
                   height="100px"

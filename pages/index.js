@@ -249,7 +249,7 @@ const Home = ({ characters }) => {
                 >
                   Only Best Ingredients
                 </Text>
-                <Text fontSize="s" p="10px" textAlign="center">
+                <Text fontSize="xs" color="#808285" p="10px" textAlign="center">
                   To create real products, we use carefully selected ingredients
                   and unrefined, chemical-free sanitary techniques.
                 </Text>
@@ -270,7 +270,7 @@ const Home = ({ characters }) => {
                 >
                   Traditions Renewed
                 </Text>
-                <Text fontSize="s" p="10px" textAlign="center">
+                <Text fontSize="xs" color="#808285" p="10px" textAlign="center">
                   To encourage local craft, procedures such as cold pressing,
                   stone grinding, mortar and pestle, sun drying, and so on are
                   used.
@@ -292,7 +292,7 @@ const Home = ({ characters }) => {
                 >
                   Superior Nutrition
                 </Text>
-                <Text fontSize="s" p="10px" textAlign="center">
+                <Text fontSize="xs" color="#808285" p="10px" textAlign="center">
                   Food that is natural, whole, and unrefined retains more
                   nutrients than food that is manufactured conventionally.
                 </Text>
@@ -313,7 +313,7 @@ const Home = ({ characters }) => {
                 >
                   Residue-Free
                 </Text>
-                <Text fontSize="s" p="10px" textAlign="center">
+                <Text fontSize="xs" color="#808285" p="10px" textAlign="center">
                   After processing, all by-products are fed to livestock,
                   leaving nothing behind.
                 </Text>
@@ -334,7 +334,7 @@ const Home = ({ characters }) => {
                 >
                   Sustainability
                 </Text>
-                <Text fontSize="s" p="10px" textAlign="center">
+                <Text fontSize="xs" color="#808285" p="10px" textAlign="center">
                   Encourages organic, natural farming methods that benefit and
                   safeguard Mother Nature.
                 </Text>
@@ -355,7 +355,7 @@ const Home = ({ characters }) => {
                 >
                   The Best Only
                 </Text>
-                <Text fontSize="s" p="10px" textAlign="center">
+                <Text fontSize="xs" color="#808285" p="10px" textAlign="center">
                   Our goal is to develop not only the best products, but also
                   the best way of life.
                 </Text>

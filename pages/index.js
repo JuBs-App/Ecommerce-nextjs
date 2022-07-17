@@ -130,7 +130,7 @@ const Home = ({ characters }) => {
             >
               Ingredients chosen with care
             </Text>
-            <Text fontSize="s" p="10px" textAlign="center">
+            <Text fontSize="s" color="#746015" p="10px" textAlign="center">
               Ingredients sourced locally and free of genetically engineered
               organisms
             </Text>
@@ -154,7 +154,7 @@ const Home = ({ characters }) => {
             >
               Lowest Carbon Footprint
             </Text>
-            <Text fontSize="s" p="10px" textAlign="center">
+            <Text fontSize="s" color="#746015" p="10px" textAlign="center">
               Conventional environmentally friendly agriculture and
               agro-processing methods to reduce emissions & pollutants.
             </Text>
@@ -177,7 +177,7 @@ const Home = ({ characters }) => {
             >
               Farmer Empowerment
             </Text>
-            <Text fontSize="s" p="10px" textAlign="center">
+            <Text fontSize="s" color="#746015" p="10px" textAlign="center">
               Support the livelihood and well-being of local farmers, as well as
               training and employment opportunities for rural Indians,
               particularly women.
@@ -201,7 +201,7 @@ const Home = ({ characters }) => {
             >
               Lovingly Packed and Delivered
             </Text>
-            <Text fontSize="s" p="10px" textAlign="center">
+            <Text fontSize="s" color="#746015" p="10px" textAlign="center">
               Genuine food goods that are hygienically packed, hand-labelled,
               and carefully delivered to ensure the finest consumer experience.
             </Text>

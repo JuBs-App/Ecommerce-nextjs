@@ -35,7 +35,7 @@ const Home = ({ characters }) => {
       </Head>
 
       <hr />
-      <Carousel fade>
+      <Carousel controls={false} fade>
         <Carousel.Item interval={1000}>
           <Image
             className="d-block w-100"

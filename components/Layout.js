@@ -62,16 +62,11 @@ const Links = [
 ]
 
 const NavLink = ({ children, path, subMenu }) => {
-  const {
-    isOpen: isOpenOnHover,
-    onOpen: onOpenOnHover,
-    onClose: onCloseOnHover,
-  } = useDisclosure()
+  const { isOpen, onOpen, onClose, onToggle } = useDisclosure()
 
   if (children == 'Products') {
     return (
       <Box
-        px={2}
         py={1}
         rounded={'md'}
         _hover={{
@@ -79,28 +74,22 @@ const NavLink = ({ children, path, subMenu }) => {
           bg: useColorModeValue('gray.200', 'gray.700'),
         }}
       >
-        <Menu isOpen={isOpenOnHover}>
+        <Menu>
           <MenuButton
             variant="ghost"
-            mx={1}
             py={[1, 2, 2]}
             px={4}
             borderRadius={5}
             _hover={{ bg: useColorModeValue('#bde8b5', '#bde8b5') }}
             aria-label="Courses"
             fontWeight="normal"
-            onMouseEnter={onOpenOnHover}
-            onMouseLeave={onCloseOnHover}
+            onClick={onToggle}
+            width="100%"
+            textAlign="left"
           >
-            Products {isOpenOnHover ? <ChevronUpIcon /> : <ChevronDownIcon />}
+            Products {isOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
           </MenuButton>
-          <MenuList
-            onMouseEnter={onOpenOnHover}
-            onMouseLeave={onCloseOnHover}
-            zIndex="200"
-            backgroundColor="#bde8b5"
-            borderRadius="0px"
-          >
+          <MenuList zIndex="200" backgroundColor="#bde8b5" borderRadius="0px">
             <Link href="/products">
               <MenuItem>All products</MenuItem>
             </Link>

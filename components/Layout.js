@@ -32,18 +32,32 @@ const Links = [
   {
     name: 'Home',
     path: '/',
+    subMenu: null,
+  },
+  {
+    name: 'Products',
+    path: '/products',
+    subMenu: [
+      { name: 'Coconut oil', path: '/products/coconut-oil' },
+      { name: 'Groundnut oil', path: '/products/groundnut-oil' },
+      { name: 'Safflower oil', path: '/products/safflower-oil' },
+      { name: 'Turmeric powder', path: '/products/turmeric-powder' },
+    ],
   },
   {
     name: 'Contact Us',
     path: '/contact-us',
+    subMenu: null,
   },
   {
     name: 'About Us',
     path: '/about-us',
+    subMenu: null,
   },
   {
     name: 'Login',
     path: '/login',
+    subMenu: null,
   },
 ]
 
@@ -188,8 +202,8 @@ function Layout({ children }) {
         {isOpen ? (
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
-              {Links.map(({ name, path }) => (
-                <NavLink key={path} path={path}>
+              {Links.map(({ name, path, subMenu }) => (
+                <NavLink key={path} path={path} subMenu={subMenu}>
                   {name}
                 </NavLink>
               ))}

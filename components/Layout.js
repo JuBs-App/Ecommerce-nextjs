@@ -124,6 +124,7 @@ function Layout({ children }) {
                 onMouseLeave={onCloseOnHover}
                 zIndex="200"
                 backgroundColor="#bde8b5"
+                borderRadius="0px"
               >
                 <Link href="/products/coconut-oil">
                   <MenuItem>Coconut oil</MenuItem>

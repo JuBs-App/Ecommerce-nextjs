@@ -4,7 +4,6 @@ import {
   FormControl,
   FormErrorMessage,
   FormLabel,
-  Head,
   Image,
   Input,
   InputGroup,
@@ -16,6 +15,7 @@ import {
 } from '@chakra-ui/react'
 import axios from 'axios'
 import { useRouter } from 'next/router'
+import Head from 'next/head'
 import Link from 'next/link'
 import React, { useContext, useEffect, useState } from 'react'
 import { Store } from '../utils/Store'
@@ -75,143 +75,157 @@ const Login = (props) => {
   })
 
   return (
-    <Stack w="100vw" h="100vh" align="center" justify="center">
-      {/* <Head>
+    <Stack align="center">
+      <Head>
         <title>Sign in to Goa natural</title>
-      </Head> */}
-
-      <Container py={2}>
-        <Stack
-          height="100%"
-          p={8}
+      </Head>
+      <SimpleGrid
+        columns={[1, 1, 2, 2]}
+        w={['100%', '100%', '80%', '80%']}
+        margin="auto"
+        spacing={5}
+        p="10px"
+        backgroundColor="#bde8b5"
+      >
+        <Image
+          src="/Goa-natural/Goa-natural03.png"
+          alt="Goa-natural"
           width="100%"
-          bg="white"
-          borderRadius={8}
-          borderColor="gray.200"
-          borderWidth={1}
-          spacing={4}
-          boxShadow="md"
-        >
-          <Text fontSize="xl" fontWeight="bold">
-            Sign in
-          </Text>
-          <Text fontSize="sm" fontWeight="normal" color="gray.400" mt={2}>
-            Continue to the Goa natural platform
-          </Text>
+          height="500px"
+          alignSelf="center"
+        />
+        <Stack justify="center">
+          <Stack
+            p={8}
+            width="100%"
+            bg="white"
+            borderRadius={8}
+            borderColor="gray.200"
+            borderWidth={1}
+            spacing={4}
+            boxShadow="md"
+          >
+            <Text fontSize="xl" fontWeight="bold">
+              Sign in
+            </Text>
+            <Text fontSize="sm" fontWeight="normal" color="gray.400" mt={2}>
+              Continue to the Goa natural platform
+            </Text>
 
-          <Stack>
-            <FormControl
-              isRequired
-              width="100%"
-              isInvalid={formik.errors.email && formik.touched.email}
-            >
-              <FormLabel htmlFor="email" fontSize="xs" fontWeight="semibold">
-                Email address
-              </FormLabel>
-              <Input
-                type="email"
-                id="email"
-                size="sm"
-                onChange={formik.handleChange}
-                value={formik.values.email}
-                fontSize="xs"
-              />
-              <FormErrorMessage>{formik.errors.email}</FormErrorMessage>
-            </FormControl>
-            <FormControl
-              isRequired
-              width="100%"
-              isInvalid={formik.errors.password && formik.touched.password}
-            >
-              <Stack direction="row" justify="space-between" align="center">
-                <FormLabel
-                  htmlFor="password"
-                  fontSize="xs"
-                  fontWeight="semibold"
-                >
-                  Password
-                </FormLabel>
-
-                <Link href="/auth/forgot">
-                  <Text
-                    pt={2}
-                    fontSize="xs"
-                    as="a"
-                    verticalAlign="middle"
-                    display="block"
-                    cursor="pointer"
-                    color="blue.600"
-                    fontWeight="bold"
-                  >
-                    Forgot password?
-                  </Text>
-                </Link>
-              </Stack>
-              <InputGroup
-                size="sm"
-                //@ts-ignore
-                placeholder="Enter your password"
+            <Stack>
+              <FormControl
+                isRequired
+                width="100%"
+                isInvalid={formik.errors.email && formik.touched.email}
               >
+                <FormLabel htmlFor="email" fontSize="xs" fontWeight="semibold">
+                  Email address
+                </FormLabel>
                 <Input
-                  type={isPasswordShown ? 'text' : 'password'}
-                  id="password"
+                  type="email"
+                  id="email"
                   size="sm"
                   onChange={formik.handleChange}
-                  value={formik.values.password}
+                  value={formik.values.email}
                   fontSize="xs"
                 />
-
-                <InputRightElement width="4.5rem">
-                  <Button
-                    size="sm"
+                <FormErrorMessage>{formik.errors.email}</FormErrorMessage>
+              </FormControl>
+              <FormControl
+                isRequired
+                width="100%"
+                isInvalid={formik.errors.password && formik.touched.password}
+              >
+                <Stack direction="row" justify="space-between" align="center">
+                  <FormLabel
+                    htmlFor="password"
                     fontSize="xs"
-                    fontWeight="normal"
-                    variant="unstyled"
-                    display="flex"
-                    flexDirection="row"
-                    alignItems="center"
-                    textAlign="center"
-                    rightIcon={isPasswordShown ? <FiLock /> : <FiUnlock />}
-                    onClick={() => setIsPasswordShown(!isPasswordShown)}
+                    fontWeight="semibold"
                   >
-                    {isPasswordShown ? 'Hide' : 'Show'}
-                  </Button>
-                </InputRightElement>
-              </InputGroup>
-              <FormErrorMessage>{formik.errors.password}</FormErrorMessage>
-            </FormControl>
+                    Password
+                  </FormLabel>
 
-            <Button
-              isLoading={loading}
-              type="submit"
-              size="sm"
-              alignSelf="start"
-              colorScheme="blue"
-              onClick={() => {
-                formik.handleSubmit()
-              }}
-              rightIcon={<FiArrowRight />}
-            >
-              Sign in
-            </Button>
-          </Stack>
+                  <Link href="/auth/forgot">
+                    <Text
+                      pt={2}
+                      fontSize="xs"
+                      as="a"
+                      verticalAlign="middle"
+                      display="block"
+                      cursor="pointer"
+                      color="blue.600"
+                      fontWeight="bold"
+                    >
+                      Forgot password?
+                    </Text>
+                  </Link>
+                </Stack>
+                <InputGroup
+                  size="sm"
+                  //@ts-ignore
+                  placeholder="Enter your password"
+                >
+                  <Input
+                    type={isPasswordShown ? 'text' : 'password'}
+                    id="password"
+                    size="sm"
+                    onChange={formik.handleChange}
+                    value={formik.values.password}
+                    fontSize="xs"
+                  />
 
-          <Link href="/signup">
-            <Text
-              fontSize="xs"
-              as="a"
-              display="block"
-              fontWeight="medium"
-              cursor="pointer"
-            >
-              Don&#39;t have an account?
-              <Text display="inline-block" color="blue.600" fontWeight="bold">
-                Get Started
+                  <InputRightElement width="4.5rem">
+                    <Button
+                      size="sm"
+                      fontSize="xs"
+                      fontWeight="normal"
+                      variant="unstyled"
+                      display="flex"
+                      flexDirection="row"
+                      alignItems="center"
+                      textAlign="center"
+                      rightIcon={isPasswordShown ? <FiLock /> : <FiUnlock />}
+                      onClick={() => setIsPasswordShown(!isPasswordShown)}
+                    >
+                      {isPasswordShown ? 'Hide' : 'Show'}
+                    </Button>
+                  </InputRightElement>
+                </InputGroup>
+                <FormErrorMessage>{formik.errors.password}</FormErrorMessage>
+              </FormControl>
+
+              <Button
+                isLoading={loading}
+                type="submit"
+                size="sm"
+                alignSelf="start"
+                colorScheme="blue"
+                onClick={() => {
+                  formik.handleSubmit()
+                }}
+                rightIcon={<FiArrowRight />}
+              >
+                Sign in
+              </Button>
+            </Stack>
+
+            <Link href="/signup">
+              <Text
+                fontSize="xs"
+                as="a"
+                display="block"
+                fontWeight="medium"
+                cursor="pointer"
+              >
+                Don&#39;t have an account?
+                <Text display="inline-block" color="blue.600" fontWeight="bold">
+                  Get Started
+                </Text>
               </Text>
-            </Text>
-          </Link>
+            </Link>
+          </Stack>
         </Stack>
-      </Container>
+      </SimpleGrid>
     </Stack>
   )
 }

@@ -114,7 +114,7 @@ const Home = ({ characters }) => {
       </Stack>
       <SimpleGrid columns={[1, 2, 4, 4]} spacing={5} p="10px">
         <Stack p="5px" alignItems="center">
-          <Card height="100%" backgroundColor="#cc8d89">
+          <Card height="100%" backgroundColor="#bde8b5">
             <Image
               src="/handpicked-ingredients.jpg"
               alt="handpicked-ingredients"
@@ -138,7 +138,7 @@ const Home = ({ characters }) => {
         </Stack>
 
         <Stack p="5px" alignItems="center">
-          <Card height="100%" backgroundColor="#cc8d89">
+          <Card height="100%" backgroundColor="#bde8b5">
             <Image
               src="/carbon-footprint.jpg"
               alt="carbon-footprint"
@@ -161,7 +161,7 @@ const Home = ({ characters }) => {
           </Card>
         </Stack>
         <Stack p="5px" alignItems="center">
-          <Card height="100%" backgroundColor="#cc8d89">
+          <Card height="100%" backgroundColor="#bde8b5">
             <Image
               src="/empowerment.jpg"
               alt="empowerment"
@@ -185,7 +185,7 @@ const Home = ({ characters }) => {
           </Card>
         </Stack>
         <Stack p="5px" alignItems="center">
-          <Card height="100%" backgroundColor="#cc8d89">
+          <Card height="100%" backgroundColor="#bde8b5">
             <Image
               src="/package.jpg"
               alt="package"
@@ -213,7 +213,7 @@ const Home = ({ characters }) => {
         columns={[1, 1, 2, 2]}
         spacing={5}
         mt="100px !important"
-        backgroundColor="#cc8d89"
+        backgroundColor="#bde8b5"
       >
         <Image
           src="/Goa-natural/Goa-natural03.png"
@@ -223,7 +223,7 @@ const Home = ({ characters }) => {
           alignSelf="center"
         />
         <Stack>
-          <Card backgroundColor="#cc8d89" borderLess={true}>
+          <Card backgroundColor="#bde8b5" borderLess={true}>
             <Text
               fontSize="s"
               fontWeight="bold"

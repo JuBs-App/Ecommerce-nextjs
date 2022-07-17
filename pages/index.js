@@ -142,7 +142,7 @@ const Home = ({ characters }) => {
             <Image
               src="/carbon-footprint.jpg"
               alt="carbon-footprint"
-              width="125px"
+              width="100px"
               height="100px"
               borderRadius="10px"
             />
@@ -165,7 +165,7 @@ const Home = ({ characters }) => {
             <Image
               src="/empowerment.jpg"
               alt="empowerment"
-              width="125px"
+              width="100px"
               height="100px"
               borderRadius="10px"
             />
@@ -189,7 +189,7 @@ const Home = ({ characters }) => {
             <Image
               src="/package.jpg"
               alt="package"
-              width="125px"
+              width="100px"
               height="100px"
               borderRadius="10px"
             />
@@ -235,7 +235,7 @@ const Home = ({ characters }) => {
             <SimpleGrid columns={[1, 2, 3, 3]} spacing={5}>
               <Stack p="5px" alignItems="center">
                 <Image
-                  src="/onlybest-90.jpg"
+                  src="/onlybest-90.png"
                   alt="onlybest"
                   width="100px"
                   height="100px"

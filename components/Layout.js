@@ -8,6 +8,10 @@ import {
   IconButton,
   Image,
   Input,
+  MenuItem,
+  Menu,
+  MenuButton,
+  MenuList,
   SimpleGrid,
   Stack,
   Text,
@@ -20,6 +24,7 @@ import { HamburgerIcon, CloseIcon, AddIcon } from '@chakra-ui/icons'
 import { AiOutlineShoppingCart } from 'react-icons/ai'
 import { FaTwitter, FaInstagram } from 'react-icons/fa'
 import { MdLocationOn, MdEmail, MdSmartphone, MdFacebook } from 'react-icons/md'
+import { ChevronDownIcon, ChevronUpIcon } from '@chakra-ui/icons'
 import FloatingWhatsapp from './FloatingWhatsapp'
 // import { Avatar, Badge } from 'antd'
 
@@ -27,37 +32,109 @@ const Links = [
   {
     name: 'Home',
     path: '/',
+    subMenu: null,
+  },
+  {
+    name: 'Products',
+    path: '/products',
+    subMenu: [
+      { name: 'Coconut oil', path: '/products/coconut-oil' },
+      { name: 'Groundnut oil', path: '/products/groundnut-oil' },
+      { name: 'Safflower oil', path: '/products/safflower-oil' },
+      { name: 'Turmeric powder', path: '/products/turmeric-powder' },
+    ],
   },
   {
     name: 'Contact Us',
     path: '/contact-us',
+    subMenu: null,
   },
   {
     name: 'About Us',
     path: '/about-us',
+    subMenu: null,
   },
   {
     name: 'Login',
     path: '/login',
+    subMenu: null,
   },
 ]
 
-const NavLink = ({ children, path }) => (
-  <Box
-    px={2}
-    py={1}
-    rounded={'md'}
-    _hover={{
-      textDecoration: 'none',
-      bg: useColorModeValue('gray.200', 'gray.700'),
-    }}
-  >
-    <Link href={path}>{children}</Link>
-  </Box>
-)
+const NavLink = ({ children, path, subMenu }) => {
+  const { isOpen, onOpen, onClose, onToggle } = useDisclosure()
+
+  if (children == 'Products') {
+    return (
+      <Box
+        py={1}
+        rounded={'md'}
+        _hover={{
+          textDecoration: 'none',
+          bg: useColorModeValue('gray.200', 'gray.700'),
+        }}
+      >
+        <Menu>
+          <MenuButton
+            variant="ghost"
+            py={[1, 2, 2]}
+            px={4}
+            borderRadius={5}
+            _hover={{ bg: useColorModeValue('#bde8b5', '#bde8b5') }}
+            aria-label="Courses"
+            fontWeight="normal"
+            onClick={onToggle}
+            width="100%"
+            textAlign="left"
+          >
+            Products {isOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
+          </MenuButton>
+          <MenuList zIndex="200" backgroundColor="#bde8b5" borderRadius="0px">
+            <Link href="/products">
+              <MenuItem>All products</MenuItem>
+            </Link>
+            <Link href="/products/coconut-oil">
+              <MenuItem>Coconut oil</MenuItem>
+            </Link>
+            <Link href="/products/groundnut-oil">
+              <MenuItem>Groundnut oil</MenuItem>
+            </Link>
+            <Link href="/products/safflower-oil">
+              <MenuItem>Safflower oil</MenuItem>
+            </Link>
+            <Link href="/products/turmeric-powder">
+              <MenuItem>Turmeric powder</MenuItem>
+            </Link>
+          </MenuList>
+        </Menu>
+      </Box>
+    )
+  } else {
+    return (
+      <Box
+        px={2}
+        py={1}
+        rounded={'md'}
+        _hover={{
+          textDecoration: 'none',
+          bg: useColorModeValue('gray.200', 'gray.700'),
+        }}
+      >
+        <Link href={path}>{children}</Link>
+      </Box>
+    )
+  }
+}
 
 function Layout({ children }) {
   const { isOpen, onOpen, onClose } = useDisclosure()
+
+  const {
+    isOpen: isOpenOnHover,
+    onOpen: onOpenOnHover,
+    onClose: onCloseOnHover,
+  } = useDisclosure()
+
   return (
     <Stack backgroundColor="#93e683">
       <chakra.header id="header">
@@ -75,6 +152,45 @@ function Layout({ children }) {
             <Link href="/">
               <Button variant="nav"> Home </Button>
             </Link>
+            <Menu isOpen={isOpenOnHover}>
+              <Link href="/products">
+                <MenuButton
+                  variant="ghost"
+                  mx={1}
+                  py={[1, 2, 2]}
+                  px={4}
+                  borderRadius={5}
+                  _hover={{ bg: useColorModeValue('#bde8b5', '#bde8b5') }}
+                  aria-label="Courses"
+                  fontWeight="normal"
+                  onMouseEnter={onOpenOnHover}
+                  onMouseLeave={onCloseOnHover}
+                >
+                  Products{' '}
+                  {isOpenOnHover ? <ChevronUpIcon /> : <ChevronDownIcon />}
+                </MenuButton>
+              </Link>
+              <MenuList
+                onMouseEnter={onOpenOnHover}
+                onMouseLeave={onCloseOnHover}
+                zIndex="200"
+                backgroundColor="#bde8b5"
+                borderRadius="0px"
+              >
+                <Link href="/products/coconut-oil">
+                  <MenuItem>Coconut oil</MenuItem>
+                </Link>
+                <Link href="/products/groundnut-oil">
+                  <MenuItem>Groundnut oil</MenuItem>
+                </Link>
+                <Link href="/products/safflower-oil">
+                  <MenuItem>Safflower oil</MenuItem>
+                </Link>
+                <Link href="/products/turmeric-powder">
+                  <MenuItem>Turmeric powder</MenuItem>
+                </Link>
+              </MenuList>
+            </Menu>
             <Link href="/about-us">
               <Button variant="nav"> About us </Button>
             </Link>
@@ -138,8 +254,8 @@ function Layout({ children }) {
         {isOpen ? (
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
-              {Links.map(({ name, path }) => (
-                <NavLink key={path} path={path}>
+              {Links.map(({ name, path, subMenu }) => (
+                <NavLink key={path} path={path} subMenu={subMenu}>
                   {name}
                 </NavLink>
               ))}

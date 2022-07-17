@@ -41,7 +41,7 @@ const Home = ({ characters }) => {
             className="d-block w-100"
             src="/Goa-natural/banner/coconut.jpg"
             alt="First slide"
-            height="450px"
+            height={['200px', '260px', '400px', '450px']}
           />
           {/* <Carousel.Caption>
             <Heading as="h1" size="4xl" noOfLines={1}>
@@ -57,7 +57,7 @@ const Home = ({ characters }) => {
             className="d-block w-100"
             src="/Goa-natural/banner/groundnut.jpg"
             alt="Second slide"
-            height="450px"
+            height={['200px', '260px', '400px', '450px']}
           />
           {/* <Carousel.Caption>
             <Heading as="h1" size="4xl" noOfLines={1}>
@@ -73,7 +73,7 @@ const Home = ({ characters }) => {
             className="d-block w-100"
             src="/Goa-natural/banner/safflower.jpg"
             alt="Third slide"
-            height="450px"
+            height={['200px', '260px', '400px', '450px']}
           />
           {/* <Carousel.Caption>
             <Heading as="h1" size="4xl" noOfLines={1}>
@@ -90,7 +90,7 @@ const Home = ({ characters }) => {
             className="d-block w-100"
             src="/Goa-natural/banner/turmeric.jpg"
             alt="Fourth slide"
-            height="450px"
+            height={['200px', '260px', '400px', '450px']}
           />
           {/* <Carousel.Caption>
             <Heading as="h1" size="4xl" noOfLines={1}>

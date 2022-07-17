@@ -94,7 +94,7 @@ function Layout({ children }) {
                 py={[1, 2, 2]}
                 px={4}
                 borderRadius={5}
-                _hover={{ bg: useColorModeValue('gray.100', 'gray.700') }}
+                _hover={{ bg: useColorModeValue('#bde8b5', '#bde8b5') }}
                 aria-label="Courses"
                 fontWeight="normal"
                 onMouseEnter={onOpenOnHover}
@@ -107,6 +107,7 @@ function Layout({ children }) {
                 onMouseEnter={onOpenOnHover}
                 onMouseLeave={onCloseOnHover}
                 zIndex="200"
+                backgroundColor="#bde8b5"
               >
                 <MenuItem>Coconut oil</MenuItem>
                 <MenuItem>Groundnut oil</MenuItem>

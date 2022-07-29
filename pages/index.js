@@ -14,6 +14,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css' // requires a loa
 import { Carousel as Carousel02 } from 'react-responsive-carousel'
 import HeroSection from '../components/HeroSection/HeroSection'
 import FarmToFork from '../components/FarmToFork/FarmToFork'
+import Card from '../components/Card'
 
 const Home = ({ characters }) => {
   return (
@@ -460,23 +461,6 @@ const Home = ({ characters }) => {
           </Stack>
         </SimpleGrid>
       </Stack>
-    </Stack>
-  )
-}
-
-const Card = ({ children, borderLess = false, ...props }) => {
-  return (
-    <Stack
-      p={8}
-      borderRadius="md"
-      bg="white"
-      boxShadow={borderLess ? 'none' : 'md'}
-      borderColor="gray.200"
-      borderWidth={borderLess ? 0 : 1}
-      alignItems="center"
-      {...props}
-    >
-      {children}
     </Stack>
   )
 }

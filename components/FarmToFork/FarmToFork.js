@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import { Image, SimpleGrid, Stack, Text } from '@chakra-ui/react'
 import AOS from 'aos'
+import Card from '../Card'
+
 const FarmToFork = () => {
   useEffect(() => {
     AOS.init()

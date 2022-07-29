@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Button, Carousel } from 'react-bootstrap'
 import { Heading, Image, ScaleFade, Stack, Text } from '@chakra-ui/react'
 import AOS from 'aos'
-// import 'aos/dist/aos.css'
-// import "./HeroSection.css";
+
 const HeroSection = () => {
   useEffect(() => {
     AOS.init()

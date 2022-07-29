@@ -9,7 +9,7 @@ const FarmToFork = () => {
   }, [])
   return (
     <>
-      <Stack textAlign="center">
+      <Stack textAlign="center" data-aos="fade-right" data-aos-duration="1000">
         <Text
           fontSize="5xl"
           fontWeight="bold"

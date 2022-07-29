@@ -12,8 +12,11 @@ import {
 import { Carousel } from 'react-bootstrap'
 import 'react-responsive-carousel/lib/styles/carousel.min.css' // requires a loader
 import { Carousel as Carousel02 } from 'react-responsive-carousel'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Home = ({ characters }) => {
+  AOS.init()
   return (
     <Stack className={styles.container}>
       <Head>

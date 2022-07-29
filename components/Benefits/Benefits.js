@@ -1,7 +1,5 @@
 import React from 'react'
 
-import './Benefits.css'
-
 const Benefits = () => {
   return (
     <Stack width="80%" margin="auto !important">

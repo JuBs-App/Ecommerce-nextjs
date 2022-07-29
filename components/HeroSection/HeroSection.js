@@ -19,7 +19,7 @@ const HeroSection = () => {
       <Carousel activeIndex={index} onSelect={handleSelect}>
         <Carousel.Item>
           <Image
-            className=""
+            className="d-block w-100"
             src="/Goa-natural/banner/safflower.jpg"
             alt="Safflower"
             height={['200px', '260px', '400px', '450px']}
@@ -48,7 +48,7 @@ const HeroSection = () => {
         </Carousel.Item>
         <Carousel.Item>
           <Image
-            className=""
+            className="d-block w-100"
             src="/Goa-natural/banner/turmeric.jpg"
             alt="Turmeric"
             height={['200px', '260px', '400px', '450px']}
@@ -82,7 +82,7 @@ const HeroSection = () => {
         </Carousel.Item>
         <Carousel.Item>
           <Image
-            className=""
+            className="d-block w-100"
             src="/Goa-natural/banner/groundnut.jpg"
             alt="Groundnut"
             height={['200px', '260px', '400px', '450px']}
@@ -112,7 +112,7 @@ const HeroSection = () => {
         </Carousel.Item>
         <Carousel.Item>
           <Image
-            className=""
+            className="d-block w-100"
             src="/Goa-natural/banner/coconut.jpg"
             alt="Coconut"
             height={['200px', '260px', '400px', '450px']}

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Montserrat&family=Playfair+Display&family=Poppins:wght@200&family=Signika:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Playfair+Display&family=Poppins:wght@200&family=Signika:wght@300&display=swap');
 .carousel-item img {
-  height: 100vh;
+  /* height: 100vh; */
   width: 100% !important;
   background-repeat: center center/cover no-repeat;
 }
@@ -10,10 +10,10 @@
 }
 .carousel .carousel-caption {
   text-align: right;
-  top: 160px;
+  top: 250px;
 }
 .carousel .carousel-caption .carousel-head {
-  font-size: 70px;
+  font-size: 50px;
 
   font-weight: 700;
   z-index: 5;
@@ -30,7 +30,7 @@
   transform-origin: 50% 50% 0px;
 }
 .carousel .carousel-caption .carousel-desc {
-  font-size: 40px;
+  font-size: 30px;
   margin-top: 0;
   font-weight: 600;
   letter-spacing: 0.2px;
@@ -99,10 +99,10 @@
     top: 280px;
   }
   .carousel-item img {
-    height: 90vh;
+    /* height: 90vh; */
   }
   .carousel .carousel-caption .carousel-head {
-    font-size: 40px;
+    font-size: 30px;
   }
   .carousel .carousel-caption .carousel-desc {
     font-size: 25px;

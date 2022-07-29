@@ -11,7 +11,6 @@ import {
   Text,
 } from '@chakra-ui/react'
 import 'react-responsive-carousel/lib/styles/carousel.min.css' // requires a loader
-import { Carousel as Carousel02 } from 'react-responsive-carousel'
 import HeroSection from '../components/HeroSection/HeroSection'
 import FarmToFork from '../components/FarmToFork/FarmToFork'
 import Why from '../components/Why/Why'

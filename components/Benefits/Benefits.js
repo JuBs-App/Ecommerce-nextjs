@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
 import { Image, SimpleGrid, Stack, Text } from '@chakra-ui/react'
+import { Carousel } from 'react-responsive-carousel'
+
 import AOS from 'aos'
 
 const Benefits = () => {
@@ -90,7 +92,7 @@ const Benefits = () => {
           </Stack>
         </Stack>
         <Stack boxShadow="lg" boxShadowColor="#6b7d70" mt="40px">
-          <Carousel02
+          <Carousel
             autoPlay={true}
             autoFocus={true}
             infiniteLoop={true}
@@ -207,7 +209,7 @@ const Benefits = () => {
                 boxShadowColor="#6b7d70"
               />
             </Stack>
-          </Carousel02>
+          </Carousel>
         </Stack>
         <Stack flexDirection="column">
           <Stack>

@@ -17,12 +17,14 @@ const Benefits = () => {
         textAlign="center"
         mt="100px !important"
         fontFamily="Mochiy Pop P One"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
       >
         Advantages of Cold Pressed Oil
       </Text>
       <SimpleGrid columns={[1, 1, 3, 3]} spacing={5}>
         <Stack flexDirection="column">
-          <Stack>
+          <Stack data-aos="fade-right" data-aos-duration="1000">
             <Text
               fontSize="s"
               fontWeight="bold"
@@ -45,7 +47,7 @@ const Benefits = () => {
               chemicals.
             </Text>
           </Stack>
-          <Stack>
+          <Stack data-aos="fade-right" data-aos-duration="1000">
             <Text
               fontSize="s"
               fontWeight="bold"
@@ -67,7 +69,7 @@ const Benefits = () => {
               and relief from cardiovascular issues.
             </Text>
           </Stack>
-          <Stack>
+          <Stack data-aos="fade-right" data-aos-duration="1000">
             <Text
               fontSize="s"
               fontWeight="bold"
@@ -91,7 +93,13 @@ const Benefits = () => {
             </Text>
           </Stack>
         </Stack>
-        <Stack boxShadow="lg" boxShadowColor="#6b7d70" mt="40px">
+        <Stack
+          boxShadow="lg"
+          boxShadowColor="#6b7d70"
+          mt="40px"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <Carousel
             autoPlay={true}
             autoFocus={true}
@@ -212,7 +220,7 @@ const Benefits = () => {
           </Carousel>
         </Stack>
         <Stack flexDirection="column">
-          <Stack>
+          <Stack data-aos="fade-left" data-aos-duration="1000">
             <Text
               fontSize="s"
               fontWeight="bold"
@@ -227,7 +235,7 @@ const Benefits = () => {
               ingredient in our oils, and it is incredibly pure and raw.
             </Text>
           </Stack>
-          <Stack>
+          <Stack data-aos="fade-left" data-aos-duration="1000">
             <Text
               fontSize="s"
               fontWeight="bold"
@@ -243,7 +251,7 @@ const Benefits = () => {
               organic antioxidants.
             </Text>
           </Stack>
-          <Stack>
+          <Stack data-aos="fade-left" data-aos-duration="1000">
             <Text
               fontSize="s"
               fontWeight="bold"

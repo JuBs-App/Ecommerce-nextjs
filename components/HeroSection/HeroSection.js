@@ -16,8 +16,13 @@ const HeroSection = () => {
   }
   return (
     <Stack>
-      <Carousel activeIndex={index} onSelect={handleSelect}>
-        <Carousel.Item>
+      <Carousel
+        activeIndex={index}
+        onSelect={handleSelect}
+        controls={false}
+        fade
+      >
+        <Carousel.Item interval={3000}>
           <Image
             className="d-block w-100"
             src="/Goa-natural/banner/safflower.jpg"
@@ -46,7 +51,7 @@ const HeroSection = () => {
             </ScaleFade>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item interval={3000}>
           <Image
             className="d-block w-100"
             src="/Goa-natural/banner/turmeric.jpg"
@@ -80,7 +85,7 @@ const HeroSection = () => {
             </ScaleFade>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item interval={3000}>
           <Image
             className="d-block w-100"
             src="/Goa-natural/banner/groundnut.jpg"
@@ -110,7 +115,7 @@ const HeroSection = () => {
             </ScaleFade>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item interval={3000}>
           <Image
             className="d-block w-100"
             src="/Goa-natural/banner/coconut.jpg"

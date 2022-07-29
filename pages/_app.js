@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 import 'aos/dist/aos.css'
 import '../components/HeroSection/HeroSection.css'
+import '../components/FarmToFork/FarmToFork.css'
 import theme from '../styles/theme'
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 import { StoreProvider } from '../utils/Store'

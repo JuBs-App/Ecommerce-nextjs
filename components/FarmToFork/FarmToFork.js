@@ -1,64 +1,120 @@
-import React from "react";
-import "./FarmToFork.css";
-import fff1 from "../Assets/images/fff1.jpg";
-import fff2 from "../Assets/images/fff2.jpg";
-import fff3 from "../Assets/images/fff3.jpg";
-import fff4 from "../Assets/images/fff4.jpg";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React, { useEffect } from 'react'
+import { Image, SimpleGrid, Stack, Text } from '@chakra-ui/react'
+import AOS from 'aos'
 const FarmToFork = () => {
-  AOS.init();
+  useEffect(() => {
+    AOS.init()
+  }, [])
   return (
-    <div className="fff-container">
-      <h1 className="fff-heading">From Farm To Fork</h1>
-      <div className="fff-flex">
-        <div className="fff-card"  data-aos='fade-up' data-aos-duration='2000' >
-          <img
-            className="fff-card-img"
-            src={fff1}
-            alt="handpicked ingredients"
-          />
-          <p className="fff-card-title">Handpicked Ingredients</p>
-          <p className="fff-card-description">
-            Carefully selected locally grown ingredients, free from genetically
-            modified organisms.
-          </p>
-        </div>
-        <div className="fff-card"  data-aos='fade-up' data-aos-duration='2000' >
-          <img
-            className="fff-card-img"
-            src={fff2}
-            alt="least carbon footprint"
-          />
-          <p className="fff-card-title">Least Carbon Footprint</p>
-          <p className="fff-card-description">
-            Traditional eco-friendly agricultural and agro-processing practices
-            to prevent pollution & emissions.
-          </p>
-        </div>
-        <div className="fff-card"  data-aos='fade-up' data-aos-duration='2000' >
-          <img className="fff-card-img" src={fff3} alt="rural empowerment" />
-          <p className="fff-card-title">Rural Empowerment</p>
-          <p className="fff-card-description">
-            Support the livelihood & well-being of local farmers, training &
-            employment for rural Indians, especially women.
-          </p>
-        </div>
-        <div className="fff-card"  data-aos='fade-up' data-aos-duration='2000' >
-          <img
-            className="fff-card-img"
-            src={fff4}
-            alt="Packed & Delivered with Love"
-          />
-          <p className="fff-card-title">Packed & Delivered with Love</p>
-          <p className="fff-card-description">
-            Genuine food products hygienically packed, hand labelled & carefully
-            delivered for best consumer experience.
-          </p>
-        </div>
-      </div>
-    </div>
-  );
-};
+    <>
+      <Stack textAlign="center">
+        <Text
+          fontSize="5xl"
+          fontWeight="bold"
+          mt="50px !important"
+          fontFamily="Mochiy Pop P One"
+        >
+          From Farm to Fork
+        </Text>
+      </Stack>
+      <SimpleGrid columns={[1, 2, 4, 4]} spacing={5} p="10px">
+        <Stack p="5px" alignItems="center">
+          <Card height="100%" backgroundColor="#bde8b5">
+            <Image
+              src="/handpicked-ingredients.jpg"
+              alt="handpicked-ingredients"
+              width="100px"
+              height="100px"
+              borderRadius="10px"
+            />
+            <Text
+              fontSize="s"
+              fontWeight="bold"
+              textAlign="center"
+              fontFamily="Mochiy Pop P One"
+            >
+              Ingredients chosen with care
+            </Text>
+            <Text fontSize="s" color="#746015" p="10px" textAlign="center">
+              Ingredients sourced locally and free of genetically engineered
+              organisms
+            </Text>
+          </Card>
+        </Stack>
 
-export default FarmToFork;
+        <Stack p="5px" alignItems="center">
+          <Card height="100%" backgroundColor="#bde8b5">
+            <Image
+              src="/carbon-footprint.jpg"
+              alt="carbon-footprint"
+              width="100px"
+              height="100px"
+              borderRadius="10px"
+            />
+            <Text
+              fontSize="s"
+              fontWeight="bold"
+              textAlign="center"
+              fontFamily="Mochiy Pop P One"
+            >
+              Lowest Carbon Footprint
+            </Text>
+            <Text fontSize="s" color="#746015" p="10px" textAlign="center">
+              Conventional environmentally friendly agriculture and
+              agro-processing methods to reduce emissions & pollutants.
+            </Text>
+          </Card>
+        </Stack>
+        <Stack p="5px" alignItems="center">
+          <Card height="100%" backgroundColor="#bde8b5">
+            <Image
+              src="/empowerment.jpg"
+              alt="empowerment"
+              width="100px"
+              height="100px"
+              borderRadius="10px"
+            />
+            <Text
+              fontSize="s"
+              fontWeight="bold"
+              textAlign="center"
+              fontFamily="Mochiy Pop P One"
+            >
+              Farmer Empowerment
+            </Text>
+            <Text fontSize="s" color="#746015" p="10px" textAlign="center">
+              Support the livelihood and well-being of local farmers, as well as
+              training and employment opportunities for rural Indians,
+              particularly women.
+            </Text>
+          </Card>
+        </Stack>
+        <Stack p="5px" alignItems="center">
+          <Card height="100%" backgroundColor="#bde8b5">
+            <Image
+              src="/package.jpg"
+              alt="package"
+              width="100px"
+              height="100px"
+              borderRadius="10px"
+            />
+            <Text
+              fontSize="s"
+              fontWeight="bold"
+              textAlign="center"
+              fontFamily="Mochiy Pop P One"
+            >
+              Lovingly Packed and Delivered
+            </Text>
+            <Text fontSize="s" color="#746015" p="10px" textAlign="center">
+              Genuine food goods that are hygienically packed, hand-labelled,
+              and carefully delivered to ensure the finest consumer experience.
+            </Text>
+          </Card>
+        </Stack>
+      </SimpleGrid>
+    </>
+  )
+}
+
+export default FarmToFork

@@ -10,10 +10,11 @@ import {
   Stack,
   Text,
 } from '@chakra-ui/react'
-import { Carousel } from 'react-bootstrap'
 import 'react-responsive-carousel/lib/styles/carousel.min.css' // requires a loader
 import { Carousel as Carousel02 } from 'react-responsive-carousel'
 import HeroSection from '../components/HeroSection/HeroSection'
+import FarmToFork from '../components/FarmToFork/FarmToFork'
+import Card from '../components/Card'
 
 const Home = ({ characters }) => {
   return (
@@ -38,113 +39,7 @@ const Home = ({ characters }) => {
 
       <hr />
       <HeroSection />
-      <Stack textAlign="center">
-        <Text
-          fontSize="5xl"
-          fontWeight="bold"
-          mt="50px !important"
-          fontFamily="Mochiy Pop P One"
-        >
-          From Farm to Fork
-        </Text>
-      </Stack>
-      <SimpleGrid columns={[1, 2, 4, 4]} spacing={5} p="10px">
-        <Stack p="5px" alignItems="center">
-          <Card height="100%" backgroundColor="#bde8b5">
-            <Image
-              src="/handpicked-ingredients.jpg"
-              alt="handpicked-ingredients"
-              width="100px"
-              height="100px"
-              borderRadius="10px"
-            />
-            <Text
-              fontSize="s"
-              fontWeight="bold"
-              textAlign="center"
-              fontFamily="Mochiy Pop P One"
-            >
-              Ingredients chosen with care
-            </Text>
-            <Text fontSize="s" color="#746015" p="10px" textAlign="center">
-              Ingredients sourced locally and free of genetically engineered
-              organisms
-            </Text>
-          </Card>
-        </Stack>
-
-        <Stack p="5px" alignItems="center">
-          <Card height="100%" backgroundColor="#bde8b5">
-            <Image
-              src="/carbon-footprint.jpg"
-              alt="carbon-footprint"
-              width="100px"
-              height="100px"
-              borderRadius="10px"
-            />
-            <Text
-              fontSize="s"
-              fontWeight="bold"
-              textAlign="center"
-              fontFamily="Mochiy Pop P One"
-            >
-              Lowest Carbon Footprint
-            </Text>
-            <Text fontSize="s" color="#746015" p="10px" textAlign="center">
-              Conventional environmentally friendly agriculture and
-              agro-processing methods to reduce emissions & pollutants.
-            </Text>
-          </Card>
-        </Stack>
-        <Stack p="5px" alignItems="center">
-          <Card height="100%" backgroundColor="#bde8b5">
-            <Image
-              src="/empowerment.jpg"
-              alt="empowerment"
-              width="100px"
-              height="100px"
-              borderRadius="10px"
-            />
-            <Text
-              fontSize="s"
-              fontWeight="bold"
-              textAlign="center"
-              fontFamily="Mochiy Pop P One"
-            >
-              Farmer Empowerment
-            </Text>
-            <Text fontSize="s" color="#746015" p="10px" textAlign="center">
-              Support the livelihood and well-being of local farmers, as well as
-              training and employment opportunities for rural Indians,
-              particularly women.
-            </Text>
-          </Card>
-        </Stack>
-        <Stack p="5px" alignItems="center">
-          <Card height="100%" backgroundColor="#bde8b5">
-            <Image
-              src="/package.jpg"
-              alt="package"
-              width="100px"
-              height="100px"
-              borderRadius="10px"
-            />
-            <Text
-              fontSize="s"
-              fontWeight="bold"
-              textAlign="center"
-              fontFamily="Mochiy Pop P One"
-            >
-              Lovingly Packed and Delivered
-            </Text>
-            <Text fontSize="s" color="#746015" p="10px" textAlign="center">
-              Genuine food goods that are hygienically packed, hand-labelled,
-              and carefully delivered to ensure the finest consumer experience.
-            </Text>
-          </Card>
-        </Stack>
-      </SimpleGrid>
-
+      <FarmToFork />
       <SimpleGrid
         columns={[1, 1, 2, 2]}
         spacing={5}
@@ -566,23 +461,6 @@ const Home = ({ characters }) => {
           </Stack>
         </SimpleGrid>
       </Stack>
-    </Stack>
-  )
-}
-
-const Card = ({ children, borderLess = false, ...props }) => {
-  return (
-    <Stack
-      p={8}
-      borderRadius="md"
-      bg="white"
-      boxShadow={borderLess ? 'none' : 'md'}
-      borderColor="gray.200"
-      borderWidth={borderLess ? 0 : 1}
-      alignItems="center"
-      {...props}
-    >
-      {children}
     </Stack>
   )
 }

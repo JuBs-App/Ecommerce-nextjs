@@ -21,7 +21,12 @@ const FarmToFork = () => {
       </Stack>
       <SimpleGrid columns={[1, 2, 4, 4]} spacing={5} p="10px">
         <Stack p="5px" alignItems="center">
-          <Card height="100%" backgroundColor="#bde8b5">
+          <Card
+            height="100%"
+            backgroundColor="#bde8b5"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <Image
               src="/handpicked-ingredients.jpg"
               alt="handpicked-ingredients"
@@ -45,7 +50,12 @@ const FarmToFork = () => {
         </Stack>
 
         <Stack p="5px" alignItems="center">
-          <Card height="100%" backgroundColor="#bde8b5">
+          <Card
+            height="100%"
+            backgroundColor="#bde8b5"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <Image
               src="/carbon-footprint.jpg"
               alt="carbon-footprint"
@@ -68,7 +78,12 @@ const FarmToFork = () => {
           </Card>
         </Stack>
         <Stack p="5px" alignItems="center">
-          <Card height="100%" backgroundColor="#bde8b5">
+          <Card
+            height="100%"
+            backgroundColor="#bde8b5"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <Image
               src="/empowerment.jpg"
               alt="empowerment"
@@ -92,7 +107,12 @@ const FarmToFork = () => {
           </Card>
         </Stack>
         <Stack p="5px" alignItems="center">
-          <Card height="100%" backgroundColor="#bde8b5">
+          <Card
+            height="100%"
+            backgroundColor="#bde8b5"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <Image
               src="/package.jpg"
               alt="package"

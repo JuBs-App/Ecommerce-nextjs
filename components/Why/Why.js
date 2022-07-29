@@ -21,6 +21,8 @@ const Why = () => {
         width="100%"
         height="700px"
         alignSelf="center"
+        data-aos="fade-right"
+        data-aos-duration="1000"
       />
       <Stack>
         <Card backgroundColor="#bde8b5" borderLess={true}>
@@ -33,7 +35,12 @@ const Why = () => {
             WHY GOA NATURALS?
           </Text>
           <SimpleGrid columns={[1, 2, 3, 3]} spacing={5}>
-            <Stack p="5px" alignItems="center">
+            <Stack
+              p="5px"
+              alignItems="center"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
               <Image
                 src="/onlybest-90.png"
                 alt="onlybest"
@@ -54,7 +61,12 @@ const Why = () => {
                 and unrefined, chemical-free sanitary techniques.
               </Text>
             </Stack>
-            <Stack p="5px" alignItems="center">
+            <Stack
+              p="5px"
+              alignItems="center"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
               <Image
                 src="/traditional-90.png"
                 alt="traditional"
@@ -76,7 +88,12 @@ const Why = () => {
                 used.
               </Text>
             </Stack>
-            <Stack p="5px" alignItems="center">
+            <Stack
+              p="5px"
+              alignItems="center"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
               <Image
                 src="/nutritive-90.png"
                 alt="nutritive"
@@ -97,7 +114,12 @@ const Why = () => {
                 nutrients than food that is manufactured conventionally.
               </Text>
             </Stack>
-            <Stack p="5px" alignItems="center">
+            <Stack
+              p="5px"
+              alignItems="center"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
               <Image
                 src="/residue-free-90.png"
                 alt="residue-free"
@@ -118,7 +140,12 @@ const Why = () => {
                 nothing behind.
               </Text>
             </Stack>
-            <Stack p="5px" alignItems="center">
+            <Stack
+              p="5px"
+              alignItems="center"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
               <Image
                 src="/sustainable-90.png"
                 alt="sustainable"
@@ -139,7 +166,12 @@ const Why = () => {
                 safeguard Mother Nature.
               </Text>
             </Stack>
-            <Stack p="5px" alignItems="center">
+            <Stack
+              p="5px"
+              alignItems="center"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+            >
               <Image
                 src="/and-only-best-90.png"
                 alt="and-only-best"

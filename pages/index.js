@@ -15,6 +15,7 @@ import { Carousel as Carousel02 } from 'react-responsive-carousel'
 import HeroSection from '../components/HeroSection/HeroSection'
 import FarmToFork from '../components/FarmToFork/FarmToFork'
 import Why from '../components/Why/Why'
+import Benefits from '../components/Benefits/Benefits'
 
 const Home = ({ characters }) => {
   return (
@@ -41,6 +42,7 @@ const Home = ({ characters }) => {
       <HeroSection />
       <FarmToFork />
       <Why />
+      <Benefits />
     </Stack>
   )
 }

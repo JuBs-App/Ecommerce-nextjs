@@ -3,6 +3,10 @@ import { Image, SimpleGrid, Stack, Text } from '@chakra-ui/react'
 import AOS from 'aos'
 
 const Benefits = () => {
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
   return (
     <Stack width="80%" margin="auto !important">
       <Text

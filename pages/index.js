@@ -46,14 +46,14 @@ const Home = ({ characters }) => {
             alt="First slide"
             height={['200px', '260px', '400px', '450px']}
           />
-          {/* <Carousel.Caption>
+          <Carousel.Caption>
             <Heading as="h1" size="4xl" noOfLines={1}>
               cold pressed coconut oil
             </Heading>
             <a href="#services">
-            <Button className="book-btn">Book Now</Button>
+              <Button className="book-btn">Book Now</Button>
             </a>
-          </Carousel.Caption> */}
+          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={1000}>
           <Image
@@ -62,14 +62,14 @@ const Home = ({ characters }) => {
             alt="Second slide"
             height={['200px', '260px', '400px', '450px']}
           />
-          {/* <Carousel.Caption>
+          <Carousel.Caption>
             <Heading as="h1" size="4xl" noOfLines={1}>
               cold pressed groundnut oil
             </Heading>
             <a href="#services">
-            <Button className="book-btn">Book Now</Button>
+              <Button className="book-btn">Book Now</Button>
             </a>
-          </Carousel.Caption> */}
+          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={1000}>
           <Image
@@ -78,15 +78,14 @@ const Home = ({ characters }) => {
             alt="Third slide"
             height={['200px', '260px', '400px', '450px']}
           />
-          {/* <Carousel.Caption>
+          <Carousel.Caption>
             <Heading as="h1" size="4xl" noOfLines={1}>
               cold pressed mustard oil
             </Heading>
             <a href="#services">
-            <Button className="book-btn">Book Now</Button>
+              <Button className="book-btn">Book Now</Button>
             </a>
-          </Carousel.Caption> 
-          */}
+          </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item interval={1000}>
           <Image
@@ -95,14 +94,14 @@ const Home = ({ characters }) => {
             alt="Fourth slide"
             height={['200px', '260px', '400px', '450px']}
           />
-          {/* <Carousel.Caption>
+          <Carousel.Caption>
             <Heading as="h1" size="4xl" noOfLines={1}>
               cold pressed coconut oil
             </Heading>
             <a href="#services">
-            <Button className="book-btn">Book Now</Button>
+              <Button className="book-btn">Book Now</Button>
             </a>
-          </Carousel.Caption> */}
+          </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
       <Stack textAlign="center">

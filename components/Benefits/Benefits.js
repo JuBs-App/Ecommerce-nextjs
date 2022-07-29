@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { Image, SimpleGrid, Stack, Text } from '@chakra-ui/react'
+import AOS from 'aos'
 
 const Benefits = () => {
   return (

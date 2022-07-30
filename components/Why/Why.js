@@ -9,12 +9,7 @@ const Why = () => {
   }, [])
 
   return (
-    <SimpleGrid
-      columns={[1, 1, 2, 2]}
-      spacing={5}
-      mt="100px !important"
-      backgroundColor="#bde8b5"
-    >
+    <SimpleGrid columns={[1, 1, 2, 2]} spacing={5} mt="100px !important">
       <Image
         src="/Goa-natural/Goa-natural03.png"
         alt="Goa-natural"
@@ -25,7 +20,7 @@ const Why = () => {
         data-aos-duration="1000"
       />
       <Stack>
-        <Card backgroundColor="#bde8b5" borderLess={true}>
+        <Card borderLess={true}>
           <Text
             fontSize="s"
             fontWeight="bold"

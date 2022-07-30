@@ -136,9 +136,17 @@ function Layout({ children }) {
   } = useDisclosure()
 
   return (
-    <Stack backgroundColor="#93e683">
+    <Stack>
       <chakra.header id="header">
-        <Flex w="100%" px="6" py="5" align="center" justify="space-between">
+        <Flex
+          w="100%"
+          px="6"
+          py="5"
+          align="center"
+          justify="space-between"
+          backgroundColor="black"
+          color="white"
+        >
           <IconButton
             size={'md'}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
@@ -231,7 +239,7 @@ function Layout({ children }) {
               size={'lg'}
               icon={
                 <>
-                  <AiOutlineShoppingCart color={'gray.750'} />
+                  <AiOutlineShoppingCart color={'white'} />
                   <Box
                     as={'span'}
                     color={'white'}

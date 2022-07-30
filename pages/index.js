@@ -37,7 +37,6 @@ const Home = ({ characters }) => {
         />
       </Head>
 
-      <hr />
       <HeroSection />
       <FarmToFork />
       <Why />
